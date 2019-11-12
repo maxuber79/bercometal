@@ -1,0 +1,32 @@
+/* AYUDAS CSS ----------------------------------------
+*   Marca: Banchile
+*   Autor: cmunozm
+*   Version: 1.0
+*   url: www.banchile.cl
+/*----------------------------------------------------*/
+@charset 'utf-8';@import 'helps';@import 'btn';@import 'font-web';@import 'colores';@import 'variables';
+
+/* 
+* INICIO DE PROYECTO CSS
+* ----------------------------------------------------*/
+
+/* css Generales ----------------------------------------------------*/
+$value-height: auto;
+$value-width: auto;
+@mixin valores-iniciales($value_w:auto, $value_h:auto) {
+	max-width: $value_w;
+	min-height: $value_h;
+}
+* {
+   @include border-box;
+}
+/* css proyecto ----------------------------------------------------*/
+@import 'header';
+@import 'menu';
+@import 'front-page';
+@import 'footer';
+@import 'page';
+@import 'category';
+@import 'single';
+/* Media Querys ---------------------------------------------------*/
+@import 'querys';

@@ -1,0 +1,162 @@
+/* variables scss
+*--------------------------------------------------------------------*/
+$min-height: 10%;
+$min-width: auto;
+$full-width: 100%;
+$full-height: 100%;
+
+
+#main {
+	border: 1px dashed deeppink;
+	min-height: $full-height;
+    height: $full-height;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+    justify-content: space-between;	
+	.header {
+		min-width: $full-width;
+		min-height: $min-height;
+        @include Open-sans(bold, 1em, #fff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+	.wrapper-content {
+		min-width: $full-width;
+		border: 1px dashed #000;
+		min-height: $full-height - ($min-height * 2);
+		display: flex;
+	    align-items: stretch;
+	    justify-content: space-between;
+		.sidebar {
+			min-width: 30%;
+			border: 1px dashed #000;
+            @include Open-sans(bold, 1em, #fff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+		    }
+		.inner-content {
+			min-width: 70%;
+			border: 1px dashed #000;
+            @include Open-sans(bold, 1em, #fff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+		    }
+	}
+	.footer {
+		min-width: $full-width;
+		min-height: $min-height;
+		border: 1px dashed #000;
+        @include Open-sans(bold, 2.5em, #fff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+	}
+}
+
+//Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+    #main {	
+	.header {
+		background-color: teal;
+	}
+	.wrapper-content {
+        flex-wrap: wrap;
+		.sidebar {
+            min-width: 100%;
+            background-color: rgba(0,128,128,.3);
+		}
+		.inner-content {
+            min-width: 100%; 
+            background-color: rgba(0,128,128,.6);
+		}
+	}
+	.footer {
+		background-color: teal;
+		}
+	}
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) { 
+	#main {	        
+	.header {
+		background-color: limegreen;
+	}
+	.wrapper-content {
+        flex-wrap: wrap;
+		.sidebar {
+            min-width: 100%;
+            background-color: rgba(124,252,0,.3);
+		}
+		.inner-content {
+            min-width: 100%;
+            background-color: rgba(124,252,0,.5);
+		}
+	}
+	.footer {
+		background-color: limegreen;
+		}
+	}
+ }
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+	.header {
+		background-color: orangered;
+	}
+    .wrapper-content {
+        background-color: #fff;
+        .sidebar {
+            background-color: rgba(255,69,0,.3);
+		}
+		.inner-content {
+            background-color: rgba(255,69,0,.6);              
+		}
+    }
+    .footer {
+        background-color: orangered;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 769px) and (max-width: 1199px) { 
+	.header {
+		background-color: darkcyan;
+	}
+    .wrapper-content {
+        background-color: #fff;
+        .sidebar {
+            background-color: rgba(0,139,139,.3);
+		}
+		.inner-content {
+            background-color: rgba(0,139,139,.6);               
+		}
+    }
+    .footer {
+        background-color: darkcyan;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) { 
+	.header {
+		background-color: darkmagenta;        
+	}
+    .wrapper-content {
+        background-color: #fff;
+        .sidebar {
+            background-color: rgba(139,0,139,.3);
+		}
+		.inner-content {
+            background-color: rgba(139,0,139,.6);
+		}
+    }
+    .footer {
+        background-color: darkmagenta;
+        color: #fff;
+        font-size: 1em;
+        font-family: ' Open sans', Arial, Helvetica, sans-serif;
+    }
+  }

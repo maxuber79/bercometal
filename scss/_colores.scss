@@ -1,0 +1,35 @@
+/*
+* colores redes sociales
+*-------------------------------------------------------*/
+$facebook: rgb(59, 89, 152);
+$twitter: rgb(85, 172, 238);
+$linkedin: rgb(0, 123, 181);
+$google-mas: rgb(221, 75, 57);
+$youtube: rgb(187, 0, 0);
+$whatsapp: rgb(77, 194, 71);
+/*
+*  CSS COLORS
+*--------------------------------------*/
+.background-1 {
+background: rgba(11,55,86,1);
+background: -moz-linear-gradient(45deg, rgba(11,55,86,1) 0%, rgba(15,120,168,1) 51%, rgba(25,165,230,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(11,55,86,1)), color-stop(51%, rgba(15,120,168,1)), color-stop(100%, rgba(25,165,230,1)));
+background: -webkit-linear-gradient(45deg, rgba(11,55,86,1) 0%, rgba(15,120,168,1) 51%, rgba(25,165,230,1) 100%);
+background: -o-linear-gradient(45deg, rgba(11,55,86,1) 0%, rgba(15,120,168,1) 51%, rgba(25,165,230,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(11,55,86,1) 0%, rgba(15,120,168,1) 51%, rgba(25,165,230,1) 100%);
+background: linear-gradient(45deg, rgba(11,55,86,1) 0%, rgba(15,120,168,1) 51%, rgba(25,165,230,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3756', endColorstr='#19a5e6', GradientType=1 );
+}
+.background-2 {
+    background: #161e2c;
+    margin: 0;
+    padding: 15px 0;
+}
+/*
+*  COLORES CORPORATIVOS VARIALES
+*--------------------------------------*/
+/* name                hex         rgb */
+
+
+
+

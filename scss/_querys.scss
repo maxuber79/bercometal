@@ -1,0 +1,29 @@
+/* @media [not | only] screen [and] (expression) {...} */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width: 300px) and (max-width: 320px) { 
+	.prueba {background-color: indigo;}
+}
+/*Hasta smartphones de 480px*/
+@media only screen and (min-width: 321px) and (max-width: 480px) { 
+	.prueba {background-color: magenta;}
+}
+
+/* de Smartphones a Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.prueba {background-color: cyan;}
+ }
+
+/* de Tablets a pantallas de desktops */
+@media only screen and (min-width: 769px) and (max-width: 980px) { 
+	.prueba {background-color: tomato;}
+}
+
+/* Pantallas anchas (desktops) */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) { 
+	.prueba {background-color: teal;}
+}
+
+@media only screen and ( min-width: 1920px) { 
+	.prueba {background-color: deeppink;}
+}

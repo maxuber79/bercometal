@@ -1,0 +1,103 @@
+/*
+* CSS MODALES
+*----------------------------------*/
+/* mixin
+*--------------------------*/
+    @mixin modal-size ($value-width,$y_margin,$x_margin) {
+        width: $value-width;
+        height: auto;
+        margin: $y_margin $x_margin;
+    }
+    @mixin mod-center {
+        -webkit-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
+        position: absolute !important;
+        top: 50%; 
+        left: 50%; 
+    }
+/* clases modales independientes.
+* centrar modal desde <div class="modal-dialog modal-center" role="document">
+---------------------------------------------------------------------------------*/
+.modal-center { 
+  @include mod-center;  
+   margin-top: 0;
+   max-width: auto;  
+}
+#container-modal {
+    width: auto !important;
+    padding: 0 !important;
+    height: auto !important;
+}
+.wrapper-mod-video {
+    padding: 1%;
+}
+.wrapper-md-content {
+    padding: 1.5%;
+}
+.wrapper-btn-modal {
+    display: inline-block;
+    padding:1% 2%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+}
+/* Los tamaños de los modales se aplican desde: 
+<div class="modal-dialog mod-lg" role="document">
+*----------------------------------------*/
+.mod-md {
+    @include modal-size (65%,0,auto);
+}
+.mod-xs {
+    @include modal-size (20%,0,auto);
+}
+.mod-sm {
+    @include modal-size (30%,0,auto);
+}
+.mod-lg {
+    @include modal-size (95%,0,auto);
+}
+.mod-auto {
+    @include modal-size(auto,0,auto);
+}
+/*
+* querys modale
+*---------------------------------------------------*/
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width: 250px) and (max-width: 320px) { 
+    .mod-xs, .mod-sm, .mod-md, mod-lg {
+        @include modal-size(80%,0,auto);
+    }
+}
+/*Hasta smartphones de 480px*/
+@media only screen and (min-width: 321px) and (max-width: 480px) { 
+    .mod-xs, .mod-sm, .mod-md, mod-lg {
+            @include modal-size(80%,0,auto);
+        }
+}
+/* de Smartphones a Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .mod-xs, .mod-sm, .mod-md, mod-lg {
+            @include modal-size(70%,0,auto);
+        }
+ }
+/* de Tablets a pantallas de desktops */
+@media only screen and (min-width: 769px) and (max-width: 1199px) { 
+  .mod-xs, .mod-sm, .mod-md, mod-lg {
+            @include modal-size(50%,0,auto);
+        }
+}
+/* Pantallas anchas (desktops) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) { 
+.mod-xs, .mod-sm, .mod-md, mod-lg {
+            @include modal-size(30%,0,auto);
+        }
+}
+/* Pantallas anchas (hd) */
+@media only screen and ( min-width: 1400px) {/* css */}
+/*
+* css personalizados
+*----------------------------------------------------*/

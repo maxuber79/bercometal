@@ -1,0 +1,201 @@
+/* import googlefont*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+/*------------------------------------------
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+--------------------------------------------*/
+
+/*  CSS Help Desing
+*--------------------------------------------------------------------*/
+@mixin border_help ($color:#000000) {
+    border: 1px dashed $color;
+}
+#border-1b {@include border_help(#000);background: rgba(255,147,0,.1);}
+#border-2b {@include border_help(#000);background: rgba(128,0,128,.1);}
+#border-3b {@include border_help(#000);background: rgba(0,255,0,.1);}
+#border-1 {@include border_help(deeppink);}
+#border-2 {@include border_help(navy);}
+#border-3 {@include border_help(#ff5800);}
+#border-4 {@include border_help(indigo);}
+/* .container {border: 1px dashed purple;}
+.row {border: 1px dashed red;} */
+
+/* CSS tamaños de iconos
+*--------------------------------------------------------------------*/
+@mixin icon ($fsize:16px,$fcolor:#333333,$lheight:normal) {
+	display: inline-block !important;
+	vertical-align:	middle !important;
+    line-height: $lheight;
+    font-size: $fsize;    
+    margin: 0;
+    padding: 0;
+    color: $fcolor;
+}
+.xxl-icon {@include icon (7em,#000);}
+.xl-icon {@include icon (5em,#000);}
+.lg-icon {@include icon (2em,#000);}
+.md-icon {@include icon (1.33333em,#000);}
+.sm-icon {@include icon (.875em,#000);}
+.xs-icon {@include icon (.75em,#000);line-height: 0.75em;vertical-align: -15%;}
+
+/*  CSS Anchos de tipos web
+*--------------------------------------------------------------------*/
+@mixin type-web($m-width, $width, $b_px, $b_type, $b_color) {
+	max-width: $m-width;
+    width: $width;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    border: $b_px $b_type $b_color;
+}
+#mailing {@include type-web (650px, 650px, 1px, dashed, #000);}
+#landing-page {@include type-web(960px, 960px, 1px, dashed, #333);}
+.full-width {@include type-web(100%, 100%, 1px, dashed, red);}
+
+/* Ayudas de maquetación y mixin
+*--------------------------------------------------------------------*/
+
+@mixin space_margin ($value:auto) {
+	margin: $value;
+}
+@mixin space_padding ($value:auto) {
+	padding: $value;
+}
+.father {position: relative;}
+.center-child {position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);display: inline-block;}
+.element-left {text-align: left;margin: 10px 0;padding: 0;}
+.element-center {text-align: center;margin: 10px 0;padding: 0;}
+.element-right {text-align: right;margin: 10px 0;padding: 0;}
+.air-margin {@include space_margin();}
+.air-padding {@include space_padding();}
+.no-margin, .no-padding {margin:0 !important;padding:0 !important;}
+.full-width {margin:0 !important;padding:0 !important;max-width:100%;width:100%;}
+.line-hr{margin-top: 10px;margin-bottom: 0px;clear: both;border: 0;height: 1px;background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));}
+.no-space { /* no espacios en in-block- aplicar en el div padre */
+  font-size:0;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+/* Mixins efectos css
+*--------------------------------------------------------------------*/
+@mixin transicion($timing:.2s, $effect:ease-in-out) {  
+	/*ej. transition: all .2s ease-in-out;*/
+    -webkit-transition: all $timing $effect;
+    -moz-transition: all $timing $effect;
+    -ms-transition: all $timing $effect;
+    -o-transition: all $timing $effect;
+    transition: all $timing $effect;
+}
+@mixin zoom-box ($value){
+	/*ej. transform: scale(1.06); */
+    -webkit-transform: scale($value);
+	-ms-transform: scale($value);
+	-o-transform: scale($value);
+	transform: scale($value);
+}
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* FUENTES POR DEFECTO DE PLANTILLA */
+/* probar font: font-style font-variant font-weight font-size/line-height font-family;*/
+@mixin Open-sans($fsize:16px,$fweight:400,$fcolor:#333,$lheight:normal) {
+    font: $fweight $fsize/$lheight 'Open sans', Arial, Helvetica, sans-serif;
+   /* font-family: 'Open sans', Arial, Helvetica, sans-serif;
+    font-weight: $fweight;
+    font-size: $fsize;
+    color: $fcolor;*/
+}
+@mixin Oswald($fsize:16px,$fweight:400,$fcolor:#333,$lheight:normal) {
+    font: $fweight $fsize/$lheight 'Oswald', Arial, Helvetica, sans-serif;
+    /*font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-weight: $fweight;
+    font-size: $fsize;
+    color: $fcolor;*/
+}
+@mixin roboto($fsize:16px,$fweight:400,$fcolor:#333,$lheight:normal) {
+    font: $fweight $fsize/$lheight 'roboto', Arial, Helvetica, sans-serif;
+	/*font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: $fsize;
+    font-weight: $fweight;
+    color: $fcolor;*/
+}
+@mixin texto-sombra {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+@mixin shadow-bottom {
+    -webkit-box-shadow: 0px 10px 6px -6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px 10px 6px -6px rgba(0,0,0,.3);
+    -ms-box-shadow: 0px 10px 6px -6px rgba(0,0,0,.3);
+    -o-box-shadow: 0px 10px 6px -6px rgba(0,0,0,.3);
+    box-shadow: 0px 10px 6px -6px rgba(0,0,0,.3);
+}
+.effect-shadow-2 {
+  position: relative;
+    &:before, &:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width:300px;
+        background: #777;
+        -webkit-box-shadow: 0 15px 10px #777;
+        -moz-box-shadow: 0 15px 10px #777;
+        box-shadow: 0 15px 10px #777;
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    &:after {
+      -webkit-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    }
+}
+@mixin margin_padding-0($value:0) {
+	margin: $value !important;
+	padding: $value !important;
+}
+.mp-0 {
+    @include margin_padding-0;
+}
+/* css variables & mixin para fondos
+*---------------------------------------*/
+/*Ej. @include background(#f1f1f1, 'banner-liberamos.jpg', left, center, no-repeat, fixed, cover); */
+$assets_path: 'http://placeimg.com';
+$path_file: '../images/img-servicios';
+
+@mixin background ($bg-color, $img_uri, $value_x, $value_y,$repeat, $attachment,$value_size) {
+    background: $bg-color url(#{$path_file}/#{$img_uri}) $value_x $value_y $repeat $attachment/$value_size;
+}
+/* css para captcha google */
+@mixin re-captcha ($value_captcha:.77,$value_origin:0 0) {
+	transform: scale($value_captcha);
+	-webkit-transform: scale($value_captcha);
+	transform-origin: $value_origin;
+	-webkit-transform-origin: $value_origin;
+}

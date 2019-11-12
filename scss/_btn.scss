@@ -1,0 +1,173 @@
+/*
+* CSS BOTONES SOLUCIONES GENERALES
+*----------------------------------------*/
+/* mixin btns
+*---------------------------------------*/
+$fcolor: #fff;
+$bg: #333;
+$color_shadow: rgba(0,0,0,.2);
+$bg-hover: #555;
+@mixin btn_new ($fcolor, $bg, $color_shadow, $bg-hover) {
+    background: $bg;
+    box-shadow: 0px 2px 0px 0px $color_shadow;
+    &:link, &:focus, &:visited {
+        border-color: none;
+        @include Open-sans (400, 1em, $fcolor);
+        text-decoration: none;
+        outline-color: none;
+    }    
+    &:hover {
+        background-color: $bg-hover;
+    }
+    &:active {
+         position: relative;
+        top: 1px;
+    }
+}
+@mixin box-shadow ($top, $left, $blur, $color-shadow) {
+      -webkit-box-shadow:$top $left $blur $color;
+      -moz-box-shadow:$top $left $blur $color;
+      box-shadow:$top $left $blur $color;
+    }
+@mixin gradient-btn($position,$color-start,$color-end) {
+    background: linear-gradient($position,$color-start,$color-end);
+    background: -webkit-linear-gradient($position,$color-start,$color-end);
+}
+/*ej
+.btn--red {
+    background-color: red;
+    border: 1px solid darkred;
+    color: #fff;
+    @include gradient-btn(to bottom, red, darkred);
+        &:hover {
+            @include gradient-btn(to-bottom, darkred, red);
+            color: #fff;
+        }
+}*/
+
+/* Reset btn bootstrap */
+.btn, .btn:link, .btn:focus, .btn:visited {
+    outline: none !important;
+    border: none !important;
+}
+/* css btns
+*---------------------------------------*/
+.btn-orange {
+    @include btn_new (#fff, rgb(255,109,31), rgb(239,84,17), rgba(255,130,46,.8));
+}
+.btn-white {
+    @include btn_new (#444, rgb(255,255,255), #c3c3c3,rgb(255,193,7)); 
+    border: 1px solid #c3c3c3 !important;
+}
+.btn-orange-red {
+    background: rgb(255, 87, 34);
+    color: #fff !important;
+    box-shadow: 0px 4px 0px 0px rgb(216, 74, 30);
+    &:hover {
+    background: rgba(255, 87, 34, 0.8);            
+    }
+}
+.btn-red {
+    background-color: rgb(244, 67, 54);
+    border: 1px solid rgb(201, 57, 47);
+    color: #fff;
+    @include gradient-btn(to bottom,rgb(244,67,54),rgb(201,57,47));
+        &:hover {
+            @include gradient-btn(to-bottom,rgb(201,57,47),rgb(244, 67, 54));
+            color: #fff;
+        }
+}
+.btn-ok {
+    background-color: #7bbf2c;
+    border: 1px solid #7bbf2c;
+    background: linear-gradient(to bottom,#a3de5f 0,#7bbf2c 100%);
+    color: #fff;
+    &:hover {
+    background: linear-gradient(to bottom,#a3de5f 0,#7bbf2c 100%);
+    color: #fff;
+  }
+}
+.btn-primario {
+    background-color: #0088cf;
+    border: 1px solid #0088cf;
+    @include gradient-btn(to bottom,#17a1e6,#0088cf);
+    color: #fff;
+        &:hover {
+        color: #fff;
+        @include gradient-btn(to bottom,#0088cf,#17a1e6);
+      }
+}
+.btn-secundario {
+    background-color: #f77d0e;
+    border: 1px solid #f77d0e;
+    color: #fff;
+    @include gradient-btn(to bottom,#f77d0e,#e8760e);
+    &:hover {
+       @include gradient-btn(to bottom,#e8760e,#f77d0e);
+       color: #fff;
+    }
+}
+/* css btn up
+*-------------------------------------------------------*/
+#btn-up {
+    color: #fff;
+    margin: 0;
+    padding: 20px 15px;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    text-decoration: none;
+    background: #333;
+    z-index: 90;
+    &:link, &:focus, &:visited, &:hover {
+      text-decoration: none;
+    }
+    &:hover {
+    background: #222;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+}
+.icon-arrow_up {
+    font-size: 1.8em;
+    color: #fff;
+}
+/*
+* wrapper btns
+*---------------------------------*/
+@mixin wp-btn($width, $t_align) {
+    width: $width;
+    text-align: $t_align;
+    margin: 0 auto;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.wrapper-btn {
+    @include wp-btn(100%, right);
+}
+.btn-center {
+    @include wp-btn(100%, center);
+    display: block;
+}
+.btn-left {
+    @include wp-btn(100%, left);
+    display: block;
+}
+.btn-right {
+    @include wp-btn(100%, right);
+    display: block;
+}
+/* size btns
+*----------------------------------------------*/
+.btn-large {
+    padding: 13px 22px;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
