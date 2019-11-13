@@ -4,7 +4,14 @@
 *   Version: 1.0
 *   url: www.banchile.cl
 /*----------------------------------------------------*/
-@charset 'utf-8';@import 'helps';@import 'btn';@import 'font-web';@import 'colores';@import 'variables';
+@charset 'utf-8';
+@import 'variables';
+@import 'reset';
+@import 'helps';
+@import 'btn';
+@import 'font-web';
+@import 'colores';
+@import 'iconos';
 
 /* 
 * INICIO DE PROYECTO CSS
@@ -13,17 +20,26 @@
 /* css Generales ----------------------------------------------------*/
 $value-height: auto;
 $value-width: auto;
+
 @mixin valores-iniciales($value_w:auto, $value_h:auto) {
-	max-width: $value_w;
-	min-height: $value_h;
+    max-width: $value_w;
+    min-height: $value_h;
 }
+
 * {
-   @include border-box;
+    @include border-box;
 }
+
 /* css proyecto ----------------------------------------------------*/
+@import 'secciones';
 @import 'header';
 @import 'menu';
+@import 'intro';
+@import 'about';
+@import 'services';
 @import 'front-page';
+@import 'portafolio';
+@import 'contacto';
 @import 'footer';
 @import 'page';
 @import 'category';

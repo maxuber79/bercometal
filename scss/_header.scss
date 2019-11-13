@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    padding: 30px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+
+    @media only screen and (max-width: 640px) and (min-width: 300px) {
+        text-align: center;
+        padding: 15px;
+    }
+
+    &.header-scrolled {
+        background: rgba(0, 51, 73, 0.82);
+        padding: 20px 0;
+        height: 72px;
+        transition: all 0.5s;
+    }
+
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 200px;
+        display: inline-block;
+
+        @media only screen and (max-width: 640px) and (min-width: 300px) {
+            position: initial;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 0;
+            letter-spacing: 0;
+            word-spacing: 0;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+
+            a {
+                color: #fff;
+                padding: 0;
+                display: inline-block;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                .logo-img {
+                    width: auto;
+                    height: 55px;
+
+                    @media only screen and (max-width: 640px) and (min-width: 300px) {}
+                }
+            }
+        }
+
+        img {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+/* efecto menu */
+#header {
+    &.header-scrolled {
+        @media only screen and (max-width: 640px) and (min-width: 300px) {
+            text-align: center;
+            padding: 10px 0;
+            height: auto;
+        }
+
+        #logo {
+            position: absolute;
+            top: 12px;
+            left: 200px;
+
+            @media only screen and (max-width: 640px) and (min-width: 300px) {
+                position: initial;
+                margin: 0;
+                padding: 0;
+            }
+
+            .logo-img {
+                height: 45px;
+                transition: all 0.5s;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+#header_page_blank {
+    padding: 2% 0;
+}

@@ -1,0 +1,187 @@
+/*-------------------------------------------------------------- 
+# Sections 
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+    font-size: 32px;
+    color: $gray;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: rgb(226, 226, 226);
+    bottom: 1px;
+    left: calc(50% - 80px);
+}
+
+.section-header h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #070b52;
+    bottom: 0;
+    left: calc(50% - 35px);
+}
+
+.section-header p {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #333;
+}
+
+/* contrast-white*/
+
+.section-header-contrast h3 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header-contrast h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: rgb(226, 226, 226);
+    bottom: 1px;
+    left: calc(50% - 80px);
+}
+
+.section-header-contrast h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: calc(50% - 35px);
+}
+
+.section-header-contrast p {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+/* contrast-orange*/
+
+.section-header-contrastOrange h3 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header-contrastOrange h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: rgb(226, 226, 226);
+    bottom: 1px;
+    left: calc(50% - 80px);
+}
+
+.section-header-contrastOrange h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #070b52;
+    bottom: 0;
+    left: calc(50% - 35px);
+}
+
+.section-header-contrastOrange p {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+/* seccion header page */
+
+#wrapper-title-page {
+    background-color: #fff;
+    padding: 35px 0;
+
+    .header-title,
+    h3 {
+        @include source(30px, 700, $gray);
+        margin: 0;
+        padding-bottom: 6px;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 3px;
+            background: #070b52;
+            bottom: 0;
+            left: calc(50% - 0);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 380px;
+            height: 1px;
+            background: rgb(226, 226, 226);
+            bottom: 1px;
+            left: calc(50% - 0);
+        }
+    }
+}
+
+.page-heading {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 0 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    &.title-bg {
+        background-color: #fff;
+    }
+
+    .heading-text {
+        .entry-title {
+            @include source(40px, 400, $gray);
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
