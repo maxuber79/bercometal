@@ -24,6 +24,34 @@ Intro Section
     </section><!-- #intro -->
 
 <main id="main">
+  <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-paper-outline"></i>
+            <h4 class="title"><a href="">Certificación</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a href="">Responsabilidad</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title"><a href="">Confianza</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
  <!--==========================
         About Us Section
     ============================-->
@@ -138,89 +166,36 @@ Intro Section
 
         
         <article class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 box wow bounceInUp" data-wow-delay="0.1s">
-            <div class="row">
-                <div class="col-12">
-                <div class="wrapper-title">
-                    <h3 class="title">Lorem ipsum dolor sit amet.</h3>
-                </div>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="<?php echo esc_url( get_page_link( 150 ) ); ?>">Producción de hielo en tierra</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                    cupiditate non provident</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.3s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                    voluptatum deleniti atque</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.7s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.9s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-            </div>
-            </div>
-
-
-
-
-
-            <div class="col-xs-12 col-sm-12 col-md-6 box wow bounceInUp" data-wow-delay="0.2s">
-            <div class="row">
-                <div class="col-12">
-                <div class="wrapper-title">
-                    <h3 class="title">Lorem ipsum dolor sit amet.</h3>
-                </div>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    tarad limino ata</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.6s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.8s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.8s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-            </div>
-            </div>
+            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
         </article>
         
 
@@ -237,157 +212,7 @@ Intro Section
         <header class="section-header">
           <h3 class="section-title">Galería de Trabajos</h3>
         </header>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Lorem ipsum</li>
-              <li data-filter=".filter-card">Lorem, ipsum.</li>
-              <li data-filter=".filter-web">Lorem ipsun</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/web2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/card1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/card3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+          <?php get_template_part('template-parts/content', 'gallery'); ?>
       </div>
     </section><!-- #portfolio -->
     <!--==========================
