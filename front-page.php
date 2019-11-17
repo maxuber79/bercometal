@@ -32,21 +32,21 @@ Intro Section
         <div class="row">
 
           <div class="col-lg-4 box">
-            <i class="ion-ios-paper-outline"></i>
+            <i class="ion-ribbon-b"></i>
             <h4 class="title"><a href="">Certificación</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <p class="description">Contamos con la certificación de SABIC Polymershapes Chile, para proveer e instalar productos de Solatube y Policarbonatos.</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
-            <i class="ion-ios-stopwatch-outline"></i>
+            <i class="ion-checkmark-circled"></i>
             <h4 class="title"><a href="">Responsabilidad</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <p class="description">Mediante el desarrollo de proyectos eficientes, en los plazos definidos y con altos estándares de calidad y seguridad.</p>
           </div>
 
           <div class="col-lg-4 box">
-            <i class="ion-ios-heart-outline"></i>
+            <i class="fa fa-handshake-o"></i>
             <h4 class="title"><a href="">Confianza</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <p class="description">Mantenemos un estrecho lazo de confianza con nuestros clientes, quienes nos permiten potenciar al máximo nuestras capacidades.</p>
           </div>
 
         </div>
@@ -63,7 +63,7 @@ Intro Section
                 <div class="col-12">
                     <header class="section-header">
                         <h3>NOSOTROS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora incidunt explicabo aperiam maxime et. Ab minima hic laudantium at delectus amet non sed id, quae distinctio atque labore sit nulla, tempora et soluta esse nesciunt fuga veritatis? Sunt explicabo qui molestiae eligendi doloribus soluta, non, laboriosam eaque a, quo sint?</p>
+                        <p>Bercometal es una empresa de Construcciones Metálicas, Obras Civiles menores e Instaladores certificados de Policarbonatos y Solatube.<br> Con más de 27 años de experiencia y certificados por Sabic polymershapes CP Chile, asesoramos las necesidades de nuestros clientes para evaluar y entregar la mejor solución a sus proyectos tanto en diseño, forma, tiempo y costos.<br> Contamos con el personal calificado, capacitado y confiable para el desarrollo de los diferentes proyectos de construcción.</p>
                     </header>
                 </div>
             </div>
@@ -159,34 +159,34 @@ Intro Section
             <div class="col-12">
                 <header class="section-header wow fadeInUp">
                     <h3>Servicio</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit repellat accusantium nulla, harum voluptatem nisi vitae magni ab quam iusto repellendus ex nesciunt est vel quod porro delectus quia aut asperiores laboriosam? Commodi esse vero nulla illum, earum velit, quidem incidunt vitae dolore laborum quam rem neque, repellendus numquam adipisci.</p>
+                    <p>Nuestro servicio de construcción y expertise se basa en el desarrollo de proyectos que contemplan:</p>
                 </header>
             </div>
         </div>          
 
         
         <article class="row">
-            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <h4 class="title"><a href="">Estructuras Metálicas y Maderas</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <h4 class="title"><a href="">Sistema de Solatube</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <h4 class="title"><a href="">Obras Civiles Menores</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <h4 class="title"><a href="">Provisión e Instalación de Policarbonatos</a></h4>
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
             <h4 class="title"><a href="">Nemo Enim</a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
@@ -195,7 +195,7 @@ Intro Section
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
             <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
+          </div> -->
         </article>
         
 
