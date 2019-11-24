@@ -1,0 +1,27 @@
+#page-content {
+    background: #f3f3f3;
+    padding: 60px 0;
+
+    .post-area {
+        background-color: #fff;
+
+        .post-page {
+            img {
+                width: 95%;
+                height: auto;
+                display: block;
+                margin: 15px auto;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                color: #444;
+            }
+        }
+    }
+}
