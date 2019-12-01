@@ -167,22 +167,22 @@ Intro Section
         
         <article class="row">
             <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <div class="icon"><i class="icon-economic-architecture-building-of-stacked-containers"></i></div>
             <h4 class="title"><a href="">Estructuras Metálicas y Maderas</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <div class="icon"><i class="icon-ceiling-lamp"></i></div>
             <h4 class="title"><a href="">Sistema de Solatube</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <div class="icon"><i class="icon-sketch"></i></div>
             <h4 class="title"><a href="">Obras Civiles Menores</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <div class="icon"><i class="icon-glass-wall"></i></div>
             <h4 class="title"><a href="">Provisión e Instalación de Policarbonatos</a></h4>
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>

@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'costaaustral';
-  src:  url('fonts/costaaustral.eot?958kwx');
-  src:  url('fonts/costaaustral.eot?958kwx#iefix') format('embedded-opentype'),
-    url('fonts/costaaustral.ttf?958kwx') format('truetype'),
-    url('fonts/costaaustral.woff?958kwx') format('woff'),
-    url('fonts/costaaustral.svg?958kwx#costaaustral') format('svg');
+  font-family: 'bercometal';
+  src:  url('fonts/bercometal.eot?apjt3g');
+  src:  url('fonts/bercometal.eot?apjt3g#iefix') format('embedded-opentype'),
+    url('fonts/bercometal.ttf?apjt3g') format('truetype'),
+    url('fonts/bercometal.woff?apjt3g') format('woff'),
+    url('fonts/bercometal.svg?apjt3g#bercometal') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'costaaustral' !important;
+  font-family: 'bercometal' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,60 +25,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-iso-200-2018:before {
-  content: "\e90f";
-}
-.icon-iso-9001-2015:before {
-  content: "\e910";
-}
-.icon-iso-14001-2015:before {
-  content: "\e911";
-}
-.icon-iso-45001-2018:before {
-  content: "\e912";
-}
-.icon-compass:before {
+.icon-building-1:before {
   content: "\e900";
 }
-.icon-cruise:before {
+.icon-building-2:before {
   content: "\e901";
 }
-.icon-eye:before {
+.icon-beam:before {
   content: "\e902";
 }
-.icon-puzzle:before {
+.icon-blueprint:before {
   content: "\e903";
 }
-.icon-value:before {
+.icon-building-3:before {
   content: "\e904";
 }
-.icon-boat:before {
+.icon-ceiling-lamp:before {
   content: "\e905";
 }
-.icon-box-fish:before {
+.icon-economic-architecture-building-of-stacked-containers:before {
   content: "\e906";
 }
-.icon-box-hielo:before {
+.icon-glass-wall:before {
   content: "\e907";
 }
-.icon-box-ice:before {
+.icon-house-1:before {
   content: "\e908";
 }
-.icon-box-time:before {
+.icon-house:before {
   content: "\e909";
 }
-.icon-hielo:before {
+.icon-lamp:before {
   content: "\e90a";
 }
-.icon-pipe-fish:before {
+.icon-modern-house:before {
   content: "\e90b";
 }
-.icon-planta:before {
+.icon-parquet:before {
   content: "\e90c";
 }
-.icon-red-fish:before {
+.icon-ruler:before {
   content: "\e90d";
 }
-.icon-truck:before {
+.icon-sketch:before {
   content: "\e90e";
+}
+.icon-tools:before {
+  content: "\e90f";
 }
