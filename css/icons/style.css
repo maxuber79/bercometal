@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'bercometal';
-  src:  url('fonts/bercometal.eot?apjt3g');
-  src:  url('fonts/bercometal.eot?apjt3g#iefix') format('embedded-opentype'),
-    url('fonts/bercometal.ttf?apjt3g') format('truetype'),
-    url('fonts/bercometal.woff?apjt3g') format('woff'),
-    url('fonts/bercometal.svg?apjt3g#bercometal') format('svg');
+  src:  url('fonts/bercometal.eot?lgw90l');
+  src:  url('fonts/bercometal.eot?lgw90l#iefix') format('embedded-opentype'),
+    url('fonts/bercometal.ttf?lgw90l') format('truetype'),
+    url('fonts/bercometal.woff?lgw90l') format('woff'),
+    url('fonts/bercometal.svg?lgw90l#bercometal') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,44 +25,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-building-1:before {
+.icon-compass:before {
   content: "\e900";
 }
-.icon-building-2:before {
-  content: "\e901";
-}
-.icon-beam:before {
+.icon-eye:before {
   content: "\e902";
 }
-.icon-blueprint:before {
+.icon-puzzle:before {
   content: "\e903";
 }
-.icon-building-3:before {
+.icon-value:before {
   content: "\e904";
 }
-.icon-ceiling-lamp:before {
+.icon-building-1:before {
+  content: "\e901";
+}
+.icon-building-2:before {
   content: "\e905";
 }
-.icon-economic-architecture-building-of-stacked-containers:before {
+.icon-beam:before {
   content: "\e906";
 }
-.icon-glass-wall:before {
+.icon-blueprint:before {
   content: "\e907";
 }
-.icon-house-1:before {
+.icon-building-3:before {
   content: "\e908";
 }
-.icon-house:before {
+.icon-ceiling-lamp:before {
   content: "\e909";
 }
-.icon-lamp:before {
+.icon-economic-architecture-building-of-stacked-containers:before {
   content: "\e90a";
 }
-.icon-modern-house:before {
+.icon-glass-wall:before {
   content: "\e90b";
 }
-.icon-parquet:before {
+.icon-house-1:before {
   content: "\e90c";
+}
+.icon-house:before {
+  content: "\e910";
+}
+.icon-lamp:before {
+  content: "\e911";
+}
+.icon-modern-house:before {
+  content: "\e912";
+}
+.icon-parquet:before {
+  content: "\e913";
 }
 .icon-ruler:before {
   content: "\e90d";
@@ -72,4 +84,7 @@
 }
 .icon-tools:before {
   content: "\e90f";
+}
+.icon-economic-architecture-building-of-stacked-containers1:before {
+  content: "\e914";
 }
