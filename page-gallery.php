@@ -1,15 +1,11 @@
 <?php
 /**
- * The template for displaying pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that
- * other "pages" on your WordPress site will use a different template.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+* Template Name: Template Gallery
+*
+* @package WordPress
+* @subpackage Twenty_Fourteen
+* @since Twenty Fourteen 1.0
+*/
 get_header('page'); ?>
 
 <main id="main">	
@@ -35,15 +31,8 @@ get_header('page'); ?>
            <div class="row">
                <div class="col-lg-8 post-area">
 
-			   	<article id="post-<?php the_ID(); ?>" style="background-color: #fff;padding:5% 2%">				  
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-							<article id="post-<?php the_ID(); ?>" class="post-page">
-								<?php the_content(); ?>
-							</article>
-					<!-- loop -->
-					<?php endwhile; ?>
-					<?php endif; ?>
+			   	<article id="gallery" class="post-<?php the_ID(); ?>">				  
+					<?php get_template_part('template-parts/content', 'gallery-page'); ?>
 				</article>
 					
 				</div>	

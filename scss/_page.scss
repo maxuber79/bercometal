@@ -4,6 +4,7 @@
 
     .post-area {
         background-color: #fff;
+        padding: 5% 2%;
 
         .post-page {
             img {
@@ -21,6 +22,18 @@
             h6,
             p {
                 color: #444;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+            }
+
+            ul {
+                margin: 0 0 1.5rem 0;
+                li {
+                    font-size: 1.3rem;
+                }
             }
         }
     }
