@@ -35,6 +35,13 @@ get_header('page'); ?>
 					<?php get_template_part('template-parts/content', 'gallery-page'); ?>
 				</article>
 					
+					<div class="row">
+						<div id="border-1" class="col-12">
+							<div id="wrapper-pagination" class="text-center">
+								<?php get_template_part('template-parts/content', 'pagination'); ?>
+							</div>
+						</div>
+					</div>
 				</div>	
 				<?php get_sidebar( 'page' ); ?>
 			</div>

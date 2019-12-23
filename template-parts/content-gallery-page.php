@@ -10,18 +10,23 @@
         </div>
 
         <div class="row gallery-container">
+        <?php 
+            $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+            $args = array (
+                //'post_type'     => 'noticias',
+                //'category' => 4,
+                'cat' => '6, 7, 8, 9',
+                'posts_per_page' => 4,
+                'paged'          => $paged,
+                'orderby' => 'name', 
+                'order' => 'ASC',
+            );            
+            $the_query = new WP_query($args); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
 
+            <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
         
 
-          <?php 
-                $args = array(
-                    'cat' => '6, 7, 8, 9',
-                    'posts_per_page' => 9,
-                    'orderby' => 'name', 
-                    'order' => 'ASC', 
-                );        
-                $the_query = new WP_Query($args); ?>
-                <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
                 <div class="col-lg-4 col-md-6 gallery-item <?php the_field('filter_gallery'); ?> wow fadeInUp" data-wow-delay="0.1s">
                   <div class="gallery-wrap">
                     <figure>
@@ -48,126 +53,18 @@
                     </div>
                   </div><!--./gallery-wrap-->
                 </div><!--./col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp -->
-                <?php endwhile; wp_reset_query(); ?> 
+               <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>                        
+                <?php //wp_reset_query(); ?>  
 
-          <!-- <div class="col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp" data-wow-delay="0.1s">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/web3.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/web3.jpg" class="link-preview" data-lightbox="gallery" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-empresa wow fadeInUp" data-wow-delay="0.2s">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php// echo get_template_directory_uri(); ?>/img/gallery/app2.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/app2.jpg" class="link-preview" data-lightbox="gallery" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-particulares wow fadeInUp">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/card2.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/card2.jpg" class="link-preview" data-lightbox="gallery" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp" data-wow-delay="0.1s">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/web2.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/web2.jpg" class="link-preview" data-lightbox="gallery" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-empresa wow fadeInUp" data-wow-delay="0.2s">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/app3.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/app3.jpg" class="link-preview" data-lightbox="gallery" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-particulares wow fadeInUp">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/card1.jpg" class="img-fluid" alt="">
-                <a href="<?php// echo get_template_directory_uri(); ?>/img/gallery/card1.jpg" class="link-preview" data-lightbox="gallery" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-particulares wow fadeInUp" data-wow-delay="0.1s">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/card3.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/card3.jpg" class="link-preview" data-lightbox="gallery" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp" data-wow-delay="0.2s">
-            <div class="gallery-wrap">
-              <figure>
-                <img src="<?php //echo get_template_directory_uri(); ?>/img/gallery/web1.jpg" class="img-fluid" alt="">
-                <a href="<?php //echo get_template_directory_uri(); ?>/img/gallery/web1.jpg" class="link-preview" data-lightbox="gallery" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="gallery-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div> -->
+           <?php else : ?>   
+                    <div class="msj-error">   
+                        <h2>404</h2>
+                        <h3>Algo salió mal</h3>
+                        <p>Oops! Lo sentimos este contenido ya no exite</p>
+                        <a href="#" class="btn red" title="---" alt="---">Regresa al inicio</a>
+                    </div><!-- mensaje de error -->
+                    
+                <?php endif; ?>
 
         </div>
