@@ -169,22 +169,22 @@ Intro Section
             <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-economic-architecture-building-of-stacked-containers"></i></div>
             <h4 class="title"><a href="">Estructuras Metálicas y Maderas</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <p class="description">Proyectos para Empresas (Industriales-Comerciales-Constructoras) con productos de construcción de excelente calidad y garantizados, </p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-ceiling-lamp"></i></div>
             <h4 class="title"><a href="">Sistema de Solatube</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <p class="description">Sistema de iluminación natural eficiente, con tecnología de vanguardia que brinda luz natural y ecológica para iluminar pequeños y grandes espacios.</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-sketch"></i></div>
             <h4 class="title"><a href="">Obras Civiles Menores</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <p class="description">Habilitaciones de oficinas, Tiendas Comerciales, así como también, en viviendas particulares (Casas y Departamentos).</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-glass-wall"></i></div>
             <h4 class="title"><a href="">Provisión e Instalación de Policarbonatos</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="description">Instalación de Alveolares, Monolíticos y Antobalísticos</p>
           </div>
           <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
