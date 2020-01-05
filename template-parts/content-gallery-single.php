@@ -2,8 +2,8 @@
           <div class="col-lg-12">
             <ul id="gallery-flters">
               <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-empresa">Empresa</li>
-              <li data-filter=".filter-particulares">Particulares</li>
+              <!-- <li data-filter=".filter-empresa">Empresa</li>
+              <li data-filter=".filter-particulares">Particulares</li> -->
               <li data-filter=".filter-solatube">Solatube</li>
             </ul>
           </div>
@@ -15,7 +15,7 @@
             $args = array (
                 //'post_type'     => 'noticias',
                 //'category' => 4,
-                'cat' => '6, 7, 8, 9',
+                'cat' => '8',
                 'posts_per_page' => 10,
                 'paged'          => $paged,
                 'orderby' => 'name', 
@@ -42,9 +42,9 @@
                               <i class="ion ion-eye"></i>
                             </a>
 
-                            <a href="<?php echo $thumb_url['0'];?>" class="link-details" title="Más detalles: <?php the_title(); ?>">
+                           <!--  <a href="<?php //echo $thumb_url['0'];?>" class="link-details" title="Más detalles: <?php //the_title(); ?>">
                               <i class="ion ion-android-open"></i>
-                            </a>                            
+                            </a>    -->                         
                     </figure>
                     <div class="gallery-info">
                       <h4><a href="<?php the_permalink(); ?>"><?php the_title_attribute(); ?></a></h4>
