@@ -10,21 +10,19 @@
         </div>
 
         <div class="row gallery-container">
-        <?php 
-            $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-            $args = array (
-                //'post_type'     => 'noticias',
-                //'category' => 4,
-                'cat' => '6, 7, 8, 9',
-                'posts_per_page' => 10,
-                'paged'          => $paged,
-                'orderby' => 'name', 
-                'order' => 'ASC',
-            );            
-            $the_query = new WP_query($args); ?>
-            <?php if ( $the_query->have_posts() ) : ?>
-
-            <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
+         
+            
+            
+            <?php 
+              $paged = get_query_var('paged', 1);
+              query_posts( array( 
+                  'posts_per_page' => 5,
+                  'cat' => '6, 7, 8, 9',
+                  'paged' => $paged ,
+                  'order' => 'ASC',
+              ));
+              ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         
 
                 <div class="col-lg-4 col-md-6 gallery-item <?php the_field('filter_gallery'); ?> wow fadeInUp" data-wow-delay="0.1s">
@@ -54,17 +52,21 @@
                   </div><!--./gallery-wrap-->
                 </div><!--./col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp -->
                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>                        
-                <?php //wp_reset_query(); ?>  
+              <div class="row">
+						<div id="border-1" class="col-12">
+							 <div id="wrapper-pagination" class="text-center">
+								  <?php get_template_part('template-parts/content', 'pagination'); ?>							 
+							  </div>
+						</div>
+					</div>
 
-           <?php else : ?>   
-                    <div class="msj-error">   
-                        <h2>404</h2>
-                        <h3>Algo salió mal</h3>
-                        <p>Oops! Lo sentimos este contenido ya no exite</p>
-                        <a href="#" class="btn red" title="---" alt="---">Regresa al inicio</a>
-                    </div><!-- mensaje de error -->
-                    
-                <?php endif; ?>
+               
+
+                <?php //wp_reset_postdata(); ?>                        
+                <?php wp_reset_query(); ?>  
+
+            <?php else : get_template_part( 'inc/content', 'oops' );  endif; ?>
+
+               
 
         </div>

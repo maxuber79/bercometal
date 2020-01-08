@@ -31,17 +31,12 @@ get_header('page'); ?>
            <div class="row">
                <div class="col-lg-8 post-area">
 
-			   	<article id="gallery" class="post-<?php the_ID(); ?>">				  
+			   	<article id="gallery" class="post-<?php the_ID(); ?>">	
+				   <h2>page-gallery.php</h2>			  
 					<?php get_template_part('template-parts/content', 'gallery-page'); ?>
 				</article>
 					
-					<div class="row">
-						<div id="border-1" class="col-12">
-							<div id="wrapper-pagination" class="text-center">
-								<?php get_template_part('template-parts/content', 'pagination'); ?>
-							</div>
-						</div>
-					</div>
+					
 				</div>	
 				<?php get_sidebar( 'page' ); ?>
 			</div>

@@ -64,5 +64,5 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true ) {
 	return null;
 }
 echo bootstrap_pagination(); 
+
 ?>
-<h2>Hola MUndo!</h2>
