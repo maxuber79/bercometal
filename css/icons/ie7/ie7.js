@@ -10,28 +10,30 @@
 (function() {
 	function addIcon(el, entity) {
 		var html = el.innerHTML;
-		el.innerHTML = '<span style="font-family: \'costaaustral\'">' + entity + '</span>' + html;
+		el.innerHTML = '<span style="font-family: \'bercometal\'">' + entity + '</span>' + html;
 	}
 	var icons = {
-		'icon-iso-200-2018': '&#xe90f;',
-		'icon-iso-9001-2015': '&#xe910;',
-		'icon-iso-14001-2015': '&#xe911;',
-		'icon-iso-45001-2018': '&#xe912;',
 		'icon-compass': '&#xe900;',
-		'icon-cruise': '&#xe901;',
 		'icon-eye': '&#xe902;',
 		'icon-puzzle': '&#xe903;',
 		'icon-value': '&#xe904;',
-		'icon-boat': '&#xe905;',
-		'icon-box-fish': '&#xe906;',
-		'icon-box-hielo': '&#xe907;',
-		'icon-box-ice': '&#xe908;',
-		'icon-box-time': '&#xe909;',
-		'icon-hielo': '&#xe90a;',
-		'icon-pipe-fish': '&#xe90b;',
-		'icon-planta': '&#xe90c;',
-		'icon-red-fish': '&#xe90d;',
-		'icon-truck': '&#xe90e;',
+		'icon-building-1': '&#xe901;',
+		'icon-building-2': '&#xe905;',
+		'icon-beam': '&#xe906;',
+		'icon-blueprint': '&#xe907;',
+		'icon-building-3': '&#xe908;',
+		'icon-ceiling-lamp': '&#xe909;',
+		'icon-economic-architecture-building-of-stacked-containers': '&#xe90a;',
+		'icon-glass-wall': '&#xe90b;',
+		'icon-house-1': '&#xe90c;',
+		'icon-house': '&#xe910;',
+		'icon-lamp': '&#xe911;',
+		'icon-modern-house': '&#xe912;',
+		'icon-parquet': '&#xe913;',
+		'icon-ruler': '&#xe90d;',
+		'icon-sketch': '&#xe90e;',
+		'icon-tools': '&#xe90f;',
+		'icon-economic-architecture-building-of-stacked-containers1': '&#xe914;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

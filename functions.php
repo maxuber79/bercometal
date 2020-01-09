@@ -47,6 +47,7 @@ if ( ! function_exists( 'bercometal_setup' ) ) :
 		add_image_size('thumbnail-news', 580, 250, true);
 		add_image_size('thumb-home', 350, 205, true);
 		add_image_size ('thumb-sidebar', 64, 64, true);
+		add_image_size( 'thumb-gallery', 800, 600, true );
 		//add_image_size('mytheme-logo', 200, auto, true);
 
 		// This theme uses wp_nav_menu() in one location.
@@ -363,3 +364,31 @@ function content($limit) {
 <?php echo content('25'); ?>
 
 /********************************/
+
+/**
+ * Paginacion Numerica
+ * @since costaasutral 1.0
+ */
+function paginado() {
+    global $wp_query, $wp_rewrite;
+    $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+ 
+    $pagination = array(
+        'base' => @add_query_arg('page','%#%'),
+        'format' => '',
+        'total' => $wp_query->max_num_pages,
+        'current' => $current,
+        'show_all' => true,
+        'type' => 'list',
+        'next_text' => 'Siguiente &rarr;',
+        'prev_text' => '&larr; Anterior'
+        );
+ 
+    if( $wp_rewrite->using_permalinks() )
+        $pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+ 
+    if( !empty($wp_query->query_vars['s']) )
+        $pagination['add_args'] = array( 's' => get_query_var( 's' ) );
+ 
+    echo paginate_links( $pagination );
+}

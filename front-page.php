@@ -24,6 +24,34 @@ Intro Section
     </section><!-- #intro -->
 
 <main id="main">
+  <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ribbon-b"></i>
+            <h4 class="title"><a href="">Certificación</a></h4>
+            <p class="description">Contamos con la certificación de SABIC Polymershapes Chile, para proveer e instalar productos de Solatube y Policarbonatos.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-checkmark-circled"></i>
+            <h4 class="title"><a href="">Responsabilidad</a></h4>
+            <p class="description">Mediante el desarrollo de proyectos eficientes, en los plazos definidos y con altos estándares de calidad y seguridad.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="fa fa-handshake-o"></i>
+            <h4 class="title"><a href="">Confianza</a></h4>
+            <p class="description">Mantenemos un estrecho lazo de confianza con nuestros clientes, quienes nos permiten potenciar al máximo nuestras capacidades.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
  <!--==========================
         About Us Section
     ============================-->
@@ -35,7 +63,7 @@ Intro Section
                 <div class="col-12">
                     <header class="section-header">
                         <h3>NOSOTROS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora incidunt explicabo aperiam maxime et. Ab minima hic laudantium at delectus amet non sed id, quae distinctio atque labore sit nulla, tempora et soluta esse nesciunt fuga veritatis? Sunt explicabo qui molestiae eligendi doloribus soluta, non, laboriosam eaque a, quo sint?</p>
+                        <p>Bercometal es una empresa de Construcciones Metálicas, Obras Civiles menores e Instaladores certificados de Policarbonatos y Solatube.<br> Con más de 27 años de experiencia y certificados por Sabic polymershapes CP Chile, asesoramos las necesidades de nuestros clientes para evaluar y entregar la mejor solución a sus proyectos tanto en diseño, forma, tiempo y costos.<br> Contamos con el personal calificado, capacitado y confiable para el desarrollo de los diferentes proyectos de construcción.</p>
                     </header>
                 </div>
             </div>
@@ -131,13 +159,14 @@ Intro Section
             <div class="col-12">
                 <header class="section-header wow fadeInUp">
                     <h3>Servicio</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit repellat accusantium nulla, harum voluptatem nisi vitae magni ab quam iusto repellendus ex nesciunt est vel quod porro delectus quia aut asperiores laboriosam? Commodi esse vero nulla illum, earum velit, quidem incidunt vitae dolore laborum quam rem neque, repellendus numquam adipisci.</p>
+                    <p>Nuestro servicio de construcción y expertise se basa en el desarrollo de proyectos que contemplan:</p>
                 </header>
             </div>
         </div>          
 
         
         <article class="row">
+<<<<<<< HEAD
         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
             <h4 class="title"><a href="">Lorem Ipsum</a></h4>
@@ -159,6 +188,29 @@ Intro Section
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+=======
+            <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="icon-economic-architecture-building-of-stacked-containers"></i></div>
+            <h4 class="title"><a href="">Estructuras Metálicas y Maderas</a></h4>
+            <p class="description">Proyectos para Empresas (Industriales-Comerciales-Constructoras) con productos de construcción de excelente calidad y garantizados, </p>
+          </div>
+          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="icon-ceiling-lamp"></i></div>
+            <h4 class="title"><a href="">Sistema de Solatube</a></h4>
+            <p class="description">Sistema de iluminación natural eficiente, con tecnología de vanguardia que brinda luz natural y ecológica para iluminar pequeños y grandes espacios.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="icon-sketch"></i></div>
+            <h4 class="title"><a href="">Obras Civiles Menores</a></h4>
+            <p class="description">Habilitaciones de oficinas, Tiendas Comerciales, así como también, en viviendas particulares (Casas y Departamentos).</p>
+          </div>
+          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="icon-glass-wall"></i></div>
+            <h4 class="title"><a href="">Provisión e Instalación de Policarbonatos</a></h4>
+            <p class="description">Instalación de Alveolares, Monolíticos y Antobalísticos</p>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+>>>>>>> 1224e864b8992f19591469c1ea77174bb6f6640c
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
             <h4 class="title"><a href="">Nemo Enim</a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
@@ -167,7 +219,11 @@ Intro Section
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
             <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+<<<<<<< HEAD
           </div>
+=======
+          </div> -->
+>>>>>>> 1224e864b8992f19591469c1ea77174bb6f6640c
         </article>
         
 
@@ -184,157 +240,7 @@ Intro Section
         <header class="section-header">
           <h3 class="section-title">Galería de Trabajos</h3>
         </header>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Lorem ipsum</li>
-              <li data-filter=".filter-card">Lorem, ipsum.</li>
-              <li data-filter=".filter-web">Lorem ipsun</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/web2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/card1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/card3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo get_template_directory_uri(); ?>/img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">lorem ipsun</a></h4>
-                <p>lorem ipsun</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+          <?php get_template_part('template-parts/content', 'gallery'); ?>
       </div>
     </section><!-- #portfolio -->
     <!--==========================

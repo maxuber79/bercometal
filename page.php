@@ -1,40 +1,55 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying pages
  *
  * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * Please note that this is the WordPress construct of pages and that
+ * other "pages" on your WordPress site will use a different template.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bercometal
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
  */
+get_header('page'); ?>
 
-get_header();
-?>
+<main id="main">	
+	<section class="page-heading asset-bg">
+		<div class="container">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+			<div class="row">
+				<div class="col-6">
+						<div class="heading-text">
+							<h1 class="entry-title"><?php the_title(); ?></h1>
+						</div>
+					</div>
+					<div class="col-6 text-right">
+						<?php  get_template_part('template-parts/content', 'breadcrumb'); ?>
+					</div>	
+			</div>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		</div>
+	</section>
+	<!-- Start post-content Area -->
+  	<section id="page-content" class="page-content-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8 post-area">
 
-			get_template_part( 'template-parts/content', 'page' );
+			   	<article id="post-<?php the_ID(); ?>" style="background-color: #fff;padding:5% 2%">				  
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+							<article id="post-<?php the_ID(); ?>" class="post-page">
+								<?php the_content(); ?>
+							</article>
+					<!-- loop -->
+					<?php endwhile; ?>
+					<?php endif; ?>
+				</article>
+					
+				</div>	
+				<?php get_sidebar( 'page' ); ?>
+			</div>
+		</div>
+	</section>
+</main>
+<?php get_footer(); ?>

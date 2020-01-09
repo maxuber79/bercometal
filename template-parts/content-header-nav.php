@@ -1,4 +1,4 @@
-<div id="border-1">
+
 <?php $defaults = array(
         'theme_location' => 'menu_principal',
         'menu'              => '', // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
@@ -20,4 +20,3 @@
          );
           wp_nav_menu( $defaults );
 ?>
-</div>

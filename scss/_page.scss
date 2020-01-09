@@ -1,0 +1,40 @@
+#page-content {
+    background: #f3f3f3;
+    padding: 60px 0;
+
+    .post-area {
+        background-color: #fff;
+        padding: 5% 2%;
+
+        .post-page {
+            img {
+                width: 95%;
+                height: auto;
+                display: block;
+                margin: 15px auto;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                color: #444;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+            }
+
+            ul {
+                margin: 0 0 1.5rem 0;
+                li {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

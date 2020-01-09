@@ -35,13 +35,17 @@ $value-width: auto;
 @import 'header';
 @import 'menu';
 @import 'intro';
+@import 'featured';
 @import 'about';
 @import 'services';
 @import 'front-page';
+@import 'breadcrumb.scss';
 @import 'portafolio';
 @import 'contacto';
 @import 'footer';
 @import 'page';
+@import 'gallery';
+@import 'blog';
 @import 'category';
 @import 'single';
 /* Media Querys ---------------------------------------------------*/

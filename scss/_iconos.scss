@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'costaaustral';
-    src: url('../css/fonts/costaaustral.eot?958kwx');
-    src: url('../css/fonts/costaaustral.eot?958kwx#iefix') format('embedded-opentype'),
-        url('../css/fonts/costaaustral.ttf?958kwx') format('truetype'),
-        url('../css/fonts/costaaustral.woff?958kwx') format('woff'),
-        url('../css/fonts/costaaustral.svg?958kwx#costaaustral') format('svg');
+    font-family: 'bercometal';
+    src: url('../css/fonts/bercometal.eot?958kwx');
+    src: url('../css/fonts/bercometal.eot?958kwx#iefix') format('embedded-opentype'),
+        url('../css/fonts/bercometal.ttf?958kwx') format('truetype'),
+        url('../css/fonts/bercometal.woff?958kwx') format('woff'),
+        url('../css/fonts/bercometal.svg?958kwx#bercometal') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,7 +12,7 @@
 [class^="icon-"],
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'costaaustral' !important;
+    font-family: 'bercometal' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -25,28 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-iso-200-2018:before {
-    content: "\e90f";
-}
-
-.icon-iso-9001-2015:before {
-    content: "\e910";
-}
-
-.icon-iso-14001-2015:before {
-    content: "\e911";
-}
-
-.icon-iso-45001-2018:before {
-    content: "\e912";
-}
 
 .icon-compass:before {
     content: "\e900";
-}
-
-.icon-cruise:before {
-    content: "\e901";
 }
 
 .icon-eye:before {
@@ -61,42 +42,70 @@
     content: "\e904";
 }
 
-.icon-boat:before {
+.icon-building-1:before {
+    content: "\e901";
+}
+
+.icon-building-2:before {
     content: "\e905";
 }
 
-.icon-box-fish:before {
+.icon-beam:before {
     content: "\e906";
 }
 
-.icon-box-hielo:before {
+.icon-blueprint:before {
     content: "\e907";
 }
 
-.icon-box-ice:before {
+.icon-building-3:before {
     content: "\e908";
 }
 
-.icon-box-time:before {
+.icon-ceiling-lamp:before {
     content: "\e909";
 }
 
-.icon-hielo:before {
+.icon-economic-architecture-building-of-stacked-containers:before {
     content: "\e90a";
 }
 
-.icon-pipe-fish:before {
+.icon-glass-wall:before {
     content: "\e90b";
 }
 
-.icon-planta:before {
+.icon-house-1:before {
     content: "\e90c";
 }
 
-.icon-red-fish:before {
+.icon-house:before {
+    content: "\e910";
+}
+
+.icon-lamp:before {
+    content: "\e911";
+}
+
+.icon-modern-house:before {
+    content: "\e912";
+}
+
+.icon-parquet:before {
+    content: "\e913";
+}
+
+.icon-ruler:before {
     content: "\e90d";
 }
 
-.icon-truck:before {
+.icon-sketch:before {
     content: "\e90e";
+}
+
+.icon-tools:before {
+    content: "\e90f";
+}
+
+.icon-economic-architecture-building-of-stacked-containers1:before {
+    content: "\e914";
 }

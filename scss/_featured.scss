@@ -1,0 +1,41 @@
+/* Featured Services Section
+--------------------------------*/
+#featured-services {
+    background: $blue_dark;
+  }
+  
+  #featured-services .box {
+    padding: 30px 20px;
+  }
+  
+  #featured-services .box-bg {
+    background-image: linear-gradient(0deg, #070b52 0%, #090f76 50%, #070b52 100%);
+  }
+  
+  #featured-services i {
+    color: #fff;
+    font-size: 48px;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #featured-services h4 {
+    font-weight: 400;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  
+  #featured-services h4 a {
+    color: #fff;
+  }
+  
+  #featured-services h4 a:hover {
+    color: #fff;
+  }
+  
+  #featured-services p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 0;
+  }
