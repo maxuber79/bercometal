@@ -138,89 +138,36 @@ Intro Section
 
         
         <article class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 box wow bounceInUp" data-wow-delay="0.1s">
-            <div class="row">
-                <div class="col-12">
-                <div class="wrapper-title">
-                    <h3 class="title">Lorem ipsum dolor sit amet.</h3>
-                </div>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="<?php echo esc_url( get_page_link( 150 ) ); ?>">Producción de hielo en tierra</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                    cupiditate non provident</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.3s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                    voluptatum deleniti atque</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.7s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.9s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-            </div>
-            </div>
-
-
-
-
-
-            <div class="col-xs-12 col-sm-12 col-md-6 box wow bounceInUp" data-wow-delay="0.2s">
-            <div class="row">
-                <div class="col-12">
-                <div class="wrapper-title">
-                    <h3 class="title">Lorem ipsum dolor sit amet.</h3>
-                </div>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    tarad limino ata</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.6s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.8s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-                <div class="col-12 box wow bounceInUp" data-wow-delay="0.8s" data-wow-duration="1.4s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi</p>
-                </div>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
         </article>
         
 
