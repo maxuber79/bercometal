@@ -65,4 +65,5 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true ) {
 }
 echo bootstrap_pagination(); 
 
-?>
+
+?><P>aQUI DEBE ESTAR LA PAGINACIÓN</P>
