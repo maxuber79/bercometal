@@ -1,7 +1,7 @@
 /* gallery Section
 --------------------------------*/
 #gallery {
-    padding: 60px 0;
+    padding: 0;
 }
 
 #gallery #gallery-flters {
@@ -47,8 +47,10 @@
 
 #gallery .gallery-item {
     position: relative;
-    min-height: 360px;
+    min-height: auto;
     overflow: hidden;
+    display: inline-block;
+    margin-bottom: 25px;
 }
 
 #gallery .gallery-item figure {

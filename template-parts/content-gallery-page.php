@@ -1,4 +1,4 @@
-<div id="border-1" class="row">
+<div class="row">
   <div class="col-lg-12">
     <ul id="gallery-flters">
       <li data-filter="*" class="filter-active">Todos</li>
@@ -8,7 +8,7 @@
     </ul>
   </div>
 </div>
-<article id="border-1" class="row gallery-container">
+<article class="row gallery-container">
   <?php 
     $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
             $args = array (
@@ -46,7 +46,7 @@
                   </a>                            
           </figure>
           <div class="gallery-info">
-            <h4><a href="<?php the_permalink(); ?>"><?php the_title_attribute(); ?></a></h4>
+            <h4><a href="<?php the_permalink(); ?>"><?php //the_title_attribute(); ?> <?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></a></h4>
             <!-- <p><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></p> -->
             <p><?php the_field('category-service'); ?></p>
           </div>
@@ -58,9 +58,9 @@
       
       <?php wp_reset_postdata(); ?>
       <?php else : get_template_part( 'template-parts/content', 'oops' );  endif; ?>
-</article>
-<article id="border-1" class="col-12">
-  <div id="wrapper-pagination" class="text-center">
-      <?php get_template_part('template-parts/content', 'pagination'); ?>							 
-    </div>
-</article>
+      </article>
+      <article class="col-12">
+        <div id="wrapper-pagination" class="text-center py-2 mt-3">
+            <?php get_template_part('template-parts/content', 'pagination'); ?>							 
+          </div>
+      </article>
