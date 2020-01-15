@@ -246,8 +246,12 @@ function bercometal_scripts() {
 	wp_register_script('jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', NULL, '3.3.1', TRUE);
 	wp_enqueue_script('jQuery');
 
-	wp_register_script('migrate', get_template_directory_uri() . '/library/jquery/jquery-migrate.min.js', NULL, '1.0', TRUE);
+	/* wp_register_script('migrate', get_template_directory_uri() . '/library/jquery/jquery-migrate.min.js', NULL, '1.0', TRUE);
+	wp_enqueue_script('migrate'); */
+
+	wp_register_script('migrate','https://code.jquery.com/jquery-migrate-1.4.1.js', NULL, '1.0', TRUE);
 	wp_enqueue_script('migrate');
+
 	/* js bootstrap 4 */
 	wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', NULL, '1.14.7', TRUE);
     wp_enqueue_script('popper');

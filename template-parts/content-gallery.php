@@ -42,7 +42,7 @@
                             </a>                            
                     </figure>
                     <div class="portfolio-info">
-                      <h4><a href="#"><?php the_title_attribute(); ?></a></h4>
+                      <h4><a href="#"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></a></h4>
                       <!-- <p><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></p> -->
                       <p><?php the_field('category-service'); ?></p>
                     </div>
