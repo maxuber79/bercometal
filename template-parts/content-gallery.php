@@ -33,7 +33,7 @@
                                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/default-gallery.jpg" alt="" title="<?php the_title_attribute(); ?>">
                             <?php endif; ?> 
 
-                            <a href="<?php echo $thumb_url['0'];?>" class="link-preview" data-lightbox="portfolio" data-title="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
+                            <a href="<?php echo $thumb_url['0'];?>" class="link-preview" data-lightbox="portfolio" data-title="<?php the_excerpt(); ?>" title="<?php the_title_attribute(); ?>">
                               <i class="ion ion-eye"></i>
                             </a>
 
