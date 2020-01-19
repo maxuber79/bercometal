@@ -34,7 +34,6 @@ get_header('page'); ?>
        <div class="container">
            <div class="row">
                <div class="col-lg-8 post-area">
-				<p>page.php</p>
 			   	<article id="post-<?php the_ID(); ?>" style="background-color: #fff;padding:5% 2%">				  
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

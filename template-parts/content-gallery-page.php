@@ -46,9 +46,11 @@
                   </a>                            
           </figure>
           <div class="gallery-info">
-            <h4><a href="<?php the_permalink(); ?>"><?php //the_title_attribute(); ?> <?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></a></h4>
+            <!-- <h4><a href="<?php //the_permalink(); ?>"><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></a></h4> -->
+            <h4><a href="<?php the_permalink(); ?>" alt="<?php $cat = get_the_category(); echo $cat[0]->cat_name; ?> / <?php the_field('category-service'); ?>"><?php the_field('category-service'); ?></a></h4>
             <!-- <p><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></p> -->
-            <p><?php the_field('category-service'); ?></p>
+            <!-- <p><?php //the_field('category-service'); ?></p> -->
+            <p><?php the_field('descripcion'); ?></p>
           </div>
         </div><!--./gallery-wrap-->
       </div><!--./col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp -->

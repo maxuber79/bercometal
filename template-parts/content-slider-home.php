@@ -14,7 +14,7 @@
             );
             $the_query = new WP_query($args); ?>
             <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
-            <div class="carousel-item <?php echo get_post_meta( get_the_ID(), 'inicial', true ); ?>">
+            <div class="carousel-item <?php the_field('active'); ?>">
             
                 <div class="carousel-background">
                     <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -23,12 +23,10 @@
 
                 <div class="carousel-container">
                 <div class="carousel-content">
-                    <h2><?php $meta_print_value = get_post_meta(get_the_ID(),'titulo_carrusel',true);
-                    echo($meta_print_value); ?></h2>
-                    <p><?php $meta_print_value = get_post_meta(get_the_ID(),'sumary_carrusel',true);
-                    echo($meta_print_value); ?></p>
-                    <div><?php $meta_print_value = get_post_meta(get_the_ID(),'button_carrusel',true);
-                    echo($meta_print_value); ?></div>                    
+                    <h2><?php the_field('titulo'); ?></h2>
+                    <p><?php the_field('subtitulo'); ?></p>
+                    <div><?php //$meta_print_value = get_post_meta(get_the_ID(),'button_carrusel',true);
+                     //echo($meta_print_value); ?></div>                    
                 </div>
                 </div>
 

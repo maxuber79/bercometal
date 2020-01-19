@@ -161,8 +161,8 @@
 }
 
 .page-heading {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 0;
     margin-bottom: 0 !important;
     position: relative;
@@ -179,7 +179,7 @@
 
     .heading-text {
         .entry-title {
-            @include source(40px, 400, $gray);
+            @include source(35px,700,$gray);
             margin: 0;
             padding: 0;
         }
