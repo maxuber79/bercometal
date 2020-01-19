@@ -52,9 +52,9 @@ if ( ! function_exists( 'bercometal_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-		'menu_principal' => __( 'Menu header','costaaustral' ),
-		'menu_mobile'  => __( 'Menu mobile', 'costaaustral' ),
-		'menu_interior' => __('Menu paginas', 'costaaustral'),
+		'menu_principal' => __( 'Menu header','bercometal' ),
+		'menu_mobile'  => __( 'Menu mobile', 'bercometal' ),
+		'menu_interior' => __('Menu paginas', 'bercometal'),
 		) );
 
 		// Register Custom Navigation Walker
@@ -240,6 +240,7 @@ add_action('wp_enqueue_scripts', 'bercometal_styles');
 
 /**
  * Enqueue scripts and styles.
+ * @since bercometal 1.0
  */
 function bercometal_scripts() {	
 
@@ -371,7 +372,7 @@ function content($limit) {
 
 /**
  * Paginacion Numerica
- * @since costaasutral 1.0
+ * @since bercometal 1.0
  */
 function paginado() {
     global $wp_query, $wp_rewrite;
@@ -396,3 +397,19 @@ function paginado() {
  
     echo paginate_links( $pagination );
 }
+
+/**
+ * Modificacion url custom logo
+ * @since bercometal 1.0
+ */
+function dpw_custom_logo() {
+	$custom_logo_id = get_theme_mod( 'custom_logo' );
+    $html = sprintf( '<a href="%1$s" class="scrollto custom-logo-link" rel="home" itemprop="url">%2$s</a>',
+	esc_url( 'http://localhost/bercometal/' ),
+	wp_get_attachment_image( $custom_logo_id, 'full', false, array(
+		'class'    => 'custom-logo logo-img',
+		) )
+	);
+    return $html;  
+}
+add_filter( 'get_custom_logo', 'dpw_custom_logo' );
