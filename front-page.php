@@ -101,7 +101,7 @@ Intro Section
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-sketch"></i></div>
             <h4 class="title"><a href="<?php echo esc_url( get_page_link( 519 ) ); ?>">Obras Civiles Menores</a></h4>
-            <p class="description">Habilitaciones de oficinas, Tiendas Comerciales, así como también, en viviendas particulares (Casas y Departamentos).</p>
+            <p class="description">Ampliaciones, Reparaciones, Manutenciones, Habilitaciones de oficinas, Tiendas Comerciales, Cobertizos Estacionamientos, Patios de Servicios, Protecciones Metálicas, Rejas, Portones (correderas ó batientes), Terrazas, Lucarnas y Cupulas así como también, en viviendas particulares (Casas y Departamentos).</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-glass-wall"></i></div>
