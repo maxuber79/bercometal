@@ -405,7 +405,7 @@ function paginado() {
 function dpw_custom_logo() {
 	$custom_logo_id = get_theme_mod( 'custom_logo' );
     $html = sprintf( '<a href="%1$s" class="scrollto custom-logo-link" rel="home" itemprop="url">%2$s</a>',
-	esc_url( 'http://localhost/bercometal/' ),
+	esc_url( home_url('/') ),
 	wp_get_attachment_image( $custom_logo_id, 'full', false, array(
 		'class'    => 'custom-logo logo-img',
 		) )
@@ -413,3 +413,24 @@ function dpw_custom_logo() {
     return $html;  
 }
 add_filter( 'get_custom_logo', 'dpw_custom_logo' );
+
+/**
+ * Segundo logo en paginas interiores
+ * @since Bercometal
+ */
+function brandpage_header() { ?>
+	<!-- Logo -->
+	<a class="link-brandpage" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Front">
+		<span class="center-brandpage">
+			<img class="brandpage" src="<?php echo get_template_directory_uri();?>/images/logoSlogan.png" alt="Bercometal">
+		</span>
+	</a>
+	<!-- End Logo -->
+<?php }
+add_action( 'start_header_logo', 'brandpage_header');
+
+/**
+ * @aplicación de function
+ * <?php do_action('start_header_logo'); ?>
+ * 
+ */
