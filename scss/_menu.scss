@@ -91,7 +91,7 @@
 
 #nav-menu-container {
     float: right;
-    margin: 0;
+    margin: 15 0 0 0;
 }
 
 /* Nav Meu Styling */
@@ -100,7 +100,7 @@
         padding: 0 8px 10px 8px;
         text-decoration: none;
         display: inline-block;
-        @include source(16px, 400, #fff);
+        @include source(16px, 400, #444);
         text-transform: uppercase;
         outline: none;
     }

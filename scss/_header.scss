@@ -3,21 +3,21 @@
 --------------------------------------------------------------*/
 #header {
     padding: 30px 0;
-    height: 92px;
+    height: 100px;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    transition: all 0.5s;
+    @include transicion;
     z-index: 997;
-
+    background-color: #fff;
     @media only screen and (max-width: 640px) and (min-width: 300px) {
         text-align: center;
         padding: 15px;
     }
 
     &.header-scrolled {
-        background: rgba(7,11,82,.82);
+        background: rgba(255,255,255,.82);
         padding: 20px 0;
         height: 72px;
         transition: all 0.5s;
@@ -25,7 +25,7 @@
 
     #logo {
         position: absolute;
-        top: 20px;
+        top: 8px;
         left: 200px;
         display: inline-block;
 
@@ -54,7 +54,7 @@
 
                 .logo-img {
                     width: auto;
-                    height: 55px;
+                    height: 80px;
 
                     @media only screen and (max-width: 640px) and (min-width: 300px) {}
                 }
