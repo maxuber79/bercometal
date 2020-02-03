@@ -37,7 +37,7 @@
                               <i class="ion ion-eye"></i>
                             </a>
 
-                            <a href="<?php echo $thumb_url['0'];?>" class="link-details" title="Más detalles: <?php the_title(); ?>">
+                            <a href="<?php the_permalink(); ?>" class="link-details" title="Más detalles: <?php the_title(); ?>">
                               <i class="ion ion-android-open"></i>
                             </a>                            
                     </figure>

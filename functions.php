@@ -235,6 +235,11 @@ function bercometal_styles() {
 
 	wp_register_style('lightbox', get_template_directory_uri() . '/library/lightbox/css/lightbox.min.css' , NULL, '1.0', 'all');
 	wp_enqueue_style('lightbox');
+
+	if ( is_single() ) {
+		wp_register_style('flexslider', get_template_directory_uri() . '/library/flexslider/flexslider.css' , NULL, '2.7.2', 'all');
+		wp_enqueue_style('flexslider');
+	}
 }
 add_action('wp_enqueue_scripts', 'bercometal_styles');
 
@@ -293,11 +298,19 @@ function bercometal_scripts() {
 
 	wp_register_script('lightbox', get_template_directory_uri() . '/library/lightbox/js/lightbox.min.js', NULL, '1.0', TRUE);
 	wp_enqueue_script('lightbox');
+
+	if ( is_single() ) {
+		wp_register_script('flexslider', get_template_directory_uri() . '/library/flexslider/jquery.flexslider-min.js', NULL, '2.7.2', TRUE);
+		wp_enqueue_script('flexslider');
+	}
 	
 	// wp_enqueue_script( 'bercometal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_register_script('main-js', get_template_directory_uri() . '/js/main.js', NULL,'1.0',TRUE);
 	wp_enqueue_script('main-js');
+
+	//if ( is_single() && 'post' == get_post_type() ) {
+	
 
 	// wp_enqueue_script( 'bercometal-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
