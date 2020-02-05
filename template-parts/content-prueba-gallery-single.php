@@ -1,63 +1,91 @@
 <h2>prueba-gallery-single</h2>
-<?php 
-                $args = array(
-                    'cat' => '6, 7, 8, 9',
-                    'posts_per_page' => 9,
-                    'orderby' => 'name', 
-                    'order' => 'ASC', 
-                );        
-                $the_query = new WP_Query($args); ?>
-                <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
-            
+<?php  $args = array(
+        'cat' => '6, 7, 8, 9',
+        'posts_per_page' => 9,
+        'orderby' => 'name', 
+        'order' => 'ASC', 
+    );        
+    $the_query = new WP_Query($args); ?>
+    <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>            
 
- <?php              
-    //$thumb_img = the_field('gallery_thumb');
-    $new = get_field( 'gallery_thumb' );
+ <?php /*             
+
+   $thumb_img = get_field( 'gallery' );
 
     echo "<pre>";
 
-    //Print output
-    echo "Valores del array " . $thumb_img[0] . ", " . $thumb_img[1] . " and " .$thumb_img[2] . ".";
 
-    //Add the ending pre tag of html
+    echo "Valores del array " . $thumb_img['sizes'] . ", " . $thumb_img['sizes'] . " and " .$thumb_img['sizes'] . ".";
+
     echo "</pre>";
 
-    var_dump($new);
- ?>
+    var_dump($thumb_img);
+?>*/
+?>
+ <hr>
 
+ <?php
 
+			$images = get_field('gallery'); 
+				if( $images ): ?> <!-- This is the gallery field slug -->
+				
+				<h3>Project Examples</h3>			
+				<?php foreach( $images as $image ): ?>
+				<dl class="gallery-item">
+					<dt class="gallery-icon portrait">
+						<a href="<?php echo $images['url']; ?>"> <img src="<?php echo $images['sizes']['thumbnail']; ?>" alt="<?php echo $images['alt']; ?>" /></a>
+					</dt>
+				</dl>
+					
+				<?php endforeach; ?>
+					 <!-- Image Code -->
+				<?php endif; ?> <!-- This is where the gallery loop ends -->
+
+<?php endwhile; wp_reset_query(); ?> 
 
 <?php 
-$images = get_field( 'gallery_thumb' );
-if( $images ): ?>
-    <div id="slider" class="flexslider">
-        <ul class="slides">
-            <?php foreach( $images as $image ): ?>
-                <li>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                    <p><?php echo $image['caption']; ?></p>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-    <div id="carousel" class="flexslider">
-        <ul class="slides">
-            <?php foreach( $images as $image ): ?>
-                <li>
-                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="Thumbnail of <?php echo $image['alt']; ?>" />
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
+    if( have_rows('gallery') ):
 
-    <?php 
+while( have_rows('gallery') ) : the_row(); 
 
-$images = get_sub_field( 'gallery_thumb' );
+    ?>
+    <p><?php the_sub_field('thumbnail_1'); ?></p>
+    <?php
 
-if( $images ):
-    foreach( $images as $image ):
-        ?><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php
-    endforeach;
+endwhile;
+
 endif;
+?>
+<!-- <?php
+    $our_services = get_field('gallery'); // 'our_services' is your parent group
+    $service_one = $our_services['thumbnail_1']; // 'service_one' is your child group 
+ ?>
+ 
+ <?php echo $service_one['gallery']; // 'service_heading' is a subfield of your child group ?> -->
 
-                  <?php endif; endwhile; wp_reset_query(); ?> 
+ <?php if( have_rows('gallery') ): ?>
+    <?php while( have_rows('gallery') ): the_row(); 
+
+        // Get sub field values.
+        $image1 = get_sub_field('thumbnail_1');
+        $image2 = get_sub_field('thumbnail_2');
+        $image3 = get_sub_field('thumbnail_3');
+        $image4 = get_sub_field('thumbnail_4');
+
+        $link = get_sub_field('link');
+
+        ?>
+        <div id="hero">
+            <img src="<?php echo esc_url( $image1['url'] ); ?>" alt="<?php echo esc_attr( $image1['alt'] ); ?>" />
+            <div class="content">
+                <?php the_sub_field('caption'); ?>
+                <a href="<?php echo esc_url( $link['url'] ); ?>"><?php echo esc_attr( $link['title'] ); ?></a>
+            </div>
+        </div>
+        <style type="text/css">
+            #hero {
+                background-color: <?php the_sub_field('color'); ?>;
+            }
+        </style>
+    <?php endwhile; ?>
+<?php endif; ?>
