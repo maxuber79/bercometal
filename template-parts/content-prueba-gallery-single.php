@@ -1,91 +1,79 @@
-<h2>prueba-gallery-single</h2>
-<?php  $args = array(
-        'cat' => '6, 7, 8, 9',
-        'posts_per_page' => 9,
-        'orderby' => 'name', 
-        'order' => 'ASC', 
-    );        
-    $the_query = new WP_Query($args); ?>
-    <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>            
-
- <?php /*             
-
-   $thumb_img = get_field( 'gallery' );
-
-    echo "<pre>";
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-    echo "Valores del array " . $thumb_img['sizes'] . ", " . $thumb_img['sizes'] . " and " .$thumb_img['sizes'] . ".";
 
-    echo "</pre>";
 
-    var_dump($thumb_img);
-?>*/
+
+
+
+
+
+<article class="<?php post_class();?>">
+    
+    <?php if( have_rows('gallery') ): while( have_rows('gallery') ) : the_row(); 
+
+            // Get sub field values.
+            $image1 = get_sub_field('thumbnail_1');
+            $image2 = get_sub_field('thumbnail_2');
+            $image3 = get_sub_field('thumbnail_3');
+            $image4 = get_sub_field('thumbnail_4');
+            ?>
+            <!-- Place somewhere in the <body> of your page -->
+ <div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="<?php echo esc_url( $image1['url'] ); ?>" alt="<?php echo esc_attr( $image1['alt'] ); ?>" />
+    </li>
+    <li>
+     <img src="<?php echo esc_url( $image2['url'] ); ?>" alt="<?php echo esc_attr( $image2['alt'] ); ?>" />
+    </li>
+    <li>
+     <img src="<?php echo esc_url( $image3['url'] ); ?>" alt="<?php echo esc_attr( $image3['alt'] ); ?>" />
+    </li>
+    <li>
+      <img src="<?php echo esc_url( $image4['url'] ); ?>" alt="<?php echo esc_attr( $image4['alt'] ); ?>" />
+    </li>
+  </ul>
+</div>
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="<?php echo esc_url( $image1['url'] ); ?>" alt="<?php echo esc_attr( $image1['alt'] ); ?>" />
+    </li>
+    <li>
+      <img src="<?php echo esc_url( $image2['url'] ); ?>" alt="<?php echo esc_attr( $image2['alt'] ); ?>" />
+    </li>
+    <li>
+      <img src="<?php echo esc_url( $image3['url'] ); ?>" alt="<?php echo esc_attr( $image3['alt'] ); ?>" />
+    </li>
+    <li>
+      <img src="<?php echo esc_url( $image4['url'] ); ?>" alt="<?php echo esc_attr( $image4['alt'] ); ?>" />
+    </li>
+  </ul>
+</div>
+<?php
+    endwhile; endif; 
 ?>
- <hr>
+</article>
 
- <?php
 
-			$images = get_field('gallery'); 
-				if( $images ): ?> <!-- This is the gallery field slug -->
-				
-				<h3>Project Examples</h3>			
-				<?php foreach( $images as $image ): ?>
-				<dl class="gallery-item">
-					<dt class="gallery-icon portrait">
-						<a href="<?php echo $images['url']; ?>"> <img src="<?php echo $images['sizes']['thumbnail']; ?>" alt="<?php echo $images['alt']; ?>" /></a>
-					</dt>
-				</dl>
-					
-				<?php endforeach; ?>
-					 <!-- Image Code -->
-				<?php endif; ?> <!-- This is where the gallery loop ends -->
 
-<?php endwhile; wp_reset_query(); ?> 
 
-<?php 
-    if( have_rows('gallery') ):
 
-while( have_rows('gallery') ) : the_row(); 
 
-    ?>
-    <p><?php the_sub_field('thumbnail_1'); ?></p>
-    <?php
 
-endwhile;
 
-endif;
-?>
-<!-- <?php
-    $our_services = get_field('gallery'); // 'our_services' is your parent group
-    $service_one = $our_services['thumbnail_1']; // 'service_one' is your child group 
- ?>
- 
- <?php echo $service_one['gallery']; // 'service_heading' is a subfield of your child group ?> -->
 
- <?php if( have_rows('gallery') ): ?>
-    <?php while( have_rows('gallery') ): the_row(); 
 
-        // Get sub field values.
-        $image1 = get_sub_field('thumbnail_1');
-        $image2 = get_sub_field('thumbnail_2');
-        $image3 = get_sub_field('thumbnail_3');
-        $image4 = get_sub_field('thumbnail_4');
+<?php endwhile; else: ?>
 
-        $link = get_sub_field('link');
+    <article>
+        <header>
+            <h1>Lo lamentamos</h1>
+        </header>
+        <p>No hay contenidos que mostrar :( </p>
+    </article>
 
-        ?>
-        <div id="hero">
-            <img src="<?php echo esc_url( $image1['url'] ); ?>" alt="<?php echo esc_attr( $image1['alt'] ); ?>" />
-            <div class="content">
-                <?php the_sub_field('caption'); ?>
-                <a href="<?php echo esc_url( $link['url'] ); ?>"><?php echo esc_attr( $link['title'] ); ?></a>
-            </div>
-        </div>
-        <style type="text/css">
-            #hero {
-                background-color: <?php the_sub_field('color'); ?>;
-            }
-        </style>
-    <?php endwhile; ?>
 <?php endif; ?>
+
+
