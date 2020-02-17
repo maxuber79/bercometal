@@ -1,0 +1,407 @@
+[
+    {
+        "key": "group_5e23b6f02cb6c",
+        "title": "carrusel",
+        "fields": [
+            {
+                "key": "field_5e23b6f93ee4c",
+                "label": "Titulo",
+                "name": "titulo",
+                "type": "text",
+                "instructions": "Agregar un titulo al carrusel <h2><\/h2>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e23b869eb028",
+                "label": "Subtitulo",
+                "name": "subtitulo",
+                "type": "text",
+                "instructions": "Agregar un subtitulo al carrusel <p><\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e23b7473ee4d",
+                "label": "Active",
+                "name": "active",
+                "type": "checkbox",
+                "instructions": "Seleccionar si es el primer slide del carrusel",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "active": "active"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:carrsusel-home"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5e3a0f65664fb",
+        "title": "Gallery",
+        "fields": [
+            {
+                "key": "field_5e3a0f6c5f2b0",
+                "label": "gallery",
+                "name": "gallery",
+                "type": "group",
+                "instructions": "Ingresas grupos de imagenes a la galería",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "wrapper-gallery",
+                    "id": "wrapper-gallery"
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e3a0f9f5f2b1",
+                        "label": "thumbnail 1",
+                        "name": "thumbnail_1",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "thumbnail",
+                            "id": "thumbnail"
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumb-single-gallery",
+                        "library": "all",
+                        "min_width": 100,
+                        "min_height": 100,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5e3a0fce5f2b2",
+                        "label": "thumbnail 2",
+                        "name": "thumbnail_2",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "thumbnail",
+                            "id": "thumnail"
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumb-single-gallery",
+                        "library": "all",
+                        "min_width": 100,
+                        "min_height": 100,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5e3a0ffd5f2b3",
+                        "label": "thumbnail 3",
+                        "name": "thumbnail_3",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "thumbnail",
+                            "id": "thumbnail"
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumb-single-gallery",
+                        "library": "all",
+                        "min_width": 100,
+                        "min_height": 100,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5e3a10205f2b4",
+                        "label": "thumbnail 4",
+                        "name": "thumbnail_4",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "thumbnail",
+                            "id": "thumbnail"
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumb-single-gallery",
+                        "library": "all",
+                        "min_width": 100,
+                        "min_height": 100,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e49d97f43228",
+                "label": "Description",
+                "name": "description",
+                "type": "textarea",
+                "instructions": "Ingresar la descripción del proyecto",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "wrapper-sumary",
+                    "id": "wrapper-sumary"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 6,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:galeria"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:empresa"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:particulares"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:solatube"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5dd1ccb3c5b9c",
+        "title": "Galería",
+        "fields": [
+            {
+                "key": "field_5dd1ccf7066fa",
+                "label": "Filtro de galería",
+                "name": "filter_gallery",
+                "type": "select",
+                "instructions": "Debes seleccionar el filtro del servicio publicado",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Seleccionar filtro": "Seleccionar filtro",
+                    "filter-empresa": "filter-empresa",
+                    "filter-particulares": "filter-particulares",
+                    "filter-solatube": "filter-solatube"
+                },
+                "default_value": [
+                    "selecciona el filtro"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "label",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5dd1d46416e4c",
+                "label": "Categoria Servicios",
+                "name": "category-service",
+                "type": "select",
+                "instructions": "Debes seleccionar el nombre de la categoría del servicio",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Seleccionar categoría": "Seleccionar categoría",
+                    "Empresa": "Empresa",
+                    "Particulares": "Particulares",
+                    "Solatube": "Solatube"
+                },
+                "default_value": [
+                    "Selecciona categoría"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "label",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e23acadaa1e4",
+                "label": "Descripción",
+                "name": "descripcion",
+                "type": "text",
+                "instructions": "Agregar descripción de la galería",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5e373f7614a86",
+                "label": "Thumb Galeria",
+                "name": "gallery_thumb",
+                "type": "image",
+                "instructions": "Ingresar imagenes para la galería",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "thumbnail-gallery",
+                    "id": "thumbnail-gallery"
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": 400,
+                "min_height": 300,
+                "min_size": "",
+                "max_width": 1920,
+                "max_height": 1080,
+                "max_size": 10,
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:galeria"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:empresa"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:particulares"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:solatube"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

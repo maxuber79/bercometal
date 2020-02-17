@@ -48,6 +48,8 @@ if ( ! function_exists( 'bercometal_setup' ) ) :
 		add_image_size('thumb-home', 350, 205, true);
 		add_image_size ('thumb-sidebar', 64, 64, true);
 		add_image_size( 'thumb-gallery', 800, 600, true );
+		add_image_size('thumb-single-gallery', 800, 600, true);
+		add_image_size('thumb-single-carrusel', 300, 200, true);
 		//add_image_size('mytheme-logo', 200, auto, true);
 
 		// This theme uses wp_nav_menu() in one location.

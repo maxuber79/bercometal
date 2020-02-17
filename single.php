@@ -31,49 +31,11 @@ get_header( 'page' );
   	<section id="page-content" class="page-content-area">
        <div class="container">
            <div class="row">
-               <div class="col-lg-8 post-area">
-
-			   	<h2>single.php</h2>
-
-						<article id="gallery" class="post-<?php the_ID(); ?>">				  
-							<?php  get_template_part('template-parts/content', 'prueba-gallery-single'); ?>
-<!-- Place somewhere in the <body> of your page -->
-<!-- <div id="slider" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-  </ul>
-</div>
-<div id="carousel" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-    <li>
-      <img src="https://dummyimage.com/600x600/000/fff" />
-    </li>
-  </ul>
-</div> -->
-						
-						</article>
-
-				</div>	
+            <div class="col-lg-8 post-area">
+              <article id="gallery" class="post-<?php the_ID(); ?>">				  
+                <?php  get_template_part('template-parts/content', 'prueba-gallery-single'); ?>						
+              </article>
+				    </div>	
 				<?php get_sidebar( 'page' ); ?>
 			</div>
 		</div>
