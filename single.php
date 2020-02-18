@@ -33,7 +33,7 @@ get_header( 'page' );
            <div class="row">
             <div class="col-lg-8 post-area">
               <article id="gallery" class="post-<?php the_ID(); ?>">				  
-                <?php  get_template_part('template-parts/content', 'prueba-gallery-single'); ?>						
+                <?php  get_template_part('template-parts/content', 'gallery-single'); ?>
               </article>
 				    </div>	
 				<?php get_sidebar( 'page' ); ?>
