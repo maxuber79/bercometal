@@ -16,7 +16,7 @@
           <?php 
                 $args = array(
                     'cat' => '6, 7, 8, 9',
-                    'posts_per_page' => 9,
+                    'posts_per_page' => 12,
                     'orderby' => 'name', 
                     'order' => 'ASC', 
                 );        
