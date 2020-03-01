@@ -16,8 +16,9 @@
           <?php 
                 $args = array(
                     'cat' => '6, 7, 8, 9',
+                    //'cat' => 10,
                     'posts_per_page' => 12,
-                    'orderby' => 'name', 
+                    'orderby' => 'meta_value_num', 
                     'order' => 'ASC', 
                 );        
                 $the_query = new WP_Query($args); ?>
@@ -50,3 +51,6 @@
                 </div><!--./col-lg-4 col-md-6 portfolio-item filter-solatube wow fadeInUp -->
                 <?php endwhile; wp_reset_query(); ?> 
         </div>
+        <div class="col-12 text-center mt-4">
+				  <a href="http://webmain.cl/desarrollo/category/galeria/" class="btn btn-category">ver más proyectos</a>
+			  </div>

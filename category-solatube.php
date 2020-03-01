@@ -30,9 +30,9 @@ get_header( 'page' ); ?>
        <div class="container">
            <div class="row">
                <div class="col-lg-8 post-area">
-				<h2>category-galeria.php</h2>
+				<h2>category-solatube.php</h2>
 			   	<article id="gallery" class="post-<?php the_ID(); ?>">
-					<?php get_template_part('template-parts/content', 'gallery-page'); ?>
+					<?php get_template_part('template-parts/content', 'gallery-solatube'); ?>
 				</article>
 					
 					
