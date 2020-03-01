@@ -8,30 +8,36 @@
 
 </div>
 <div class="col-12">
-    <?php $images = get_field('gallery');
-        if( $images ): ?>
-        <div id="slider" class="flexslider customflex">
-            <ul class="slides">
-            <?php foreach( $images as $image ): ?>
-                <li>
-                    <a class="link-thumb-single-gallery" href="<?php echo esc_url($image['url']); ?>">
-                    <!-- <img src="<?php // echo esc_url($image['sizes']['large']); ?>" alt="<?php // echo esc_attr($image['alt']); ?>" /> -->
-                        <div class="thumbnail-single-gallery" style="background: url(<?php echo esc_url($image['sizes']['large']); ?>) no-repeat center center;">                    
-                    </div>
-                    </a>
-                </li>
+<?php 
+    $images = get_field('gallery');
+    if( $images ): ?>
+    <div id="slider" class="flexslider customflex">
+        <ul class="slides">
+            <?php foreach( $images as $image ):  ?> 
+
+                    <?php if( $image ): ?>
+                    <li>
+                        <a class="link-thumb-single-gallery" href="<?php echo esc_url($image['url']); ?>">
+                            <!-- <img src="<?php //echo esc_url($image['sizes']['large']); ?>" alt="<?php //echo esc_attr($image['alt']); ?>" />  -->
+                            <div class="thumbnail-single-gallery" style="background: url(<?php echo esc_url($image['sizes']['large']); ?>) no-repeat center center;"></div>
+                        </a>           
+                    </li>                  
+                <?php endif; ?>
             <?php endforeach; ?>
-            </ul>
-        </div>
-        <div id="carousel" class="flexslider">
+        </ul>
+    </div><!--./flexslider-->
+
+    <div id="carousel" class="flexslider">
             <ul class="slides">
                 <?php foreach( $images as $image ): ?>
-                    <li>
-                        <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
-                    </li>
+                    <?php if( $image ): ?>
+                        <li>
+                            <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
+                        </li>
+                    <?php endif; ?> 
                 <?php endforeach; ?>
             </ul>
-        </div>    
+        </div>
     <?php endif; ?>
 </div>
 </article>
