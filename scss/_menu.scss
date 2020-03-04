@@ -91,7 +91,7 @@
 
 #nav-menu-container {
     float: right;
-    margin: 15 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 /* Nav Meu Styling */
@@ -107,8 +107,8 @@
 
     li {
         &:hover>a {
-            color: #ffc107;
-            border-bottom: 2px solid #ffc107;
+            color: $blue_dark;
+            border-bottom: 2px solid $blue_dark;
         }
     }
 
@@ -122,25 +122,29 @@
 
     ul {
         margin: 4px 0 0 0;
-        padding: 10px;
+        padding: 0;
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
         background: #fff;
+        width: 200px;
 
         li {
             transition: 0.3s;
 
             a {
-                padding: 10px;
+                padding: 10px 20px;
                 @include source(14px, 400, $gray);
                 transition: 0.3s;
-                display: block;
+                display: inline-block;
                 text-transform: none;
+                width: 100%;
+                border-bottom: 1px solid #fff;
             }
 
             &:hover {
                 >a {
-                    color: #ffc107;
-                    border-bottom: 2px solid #ffc107;
+                    color: $blue_dark;
+                    border-bottom: 1px solid rgba(7, 11, 82, 0.308);
+                    background-color: rgba(7, 11, 82, 0.185);
                 }
             }
         }
@@ -171,7 +175,19 @@
 }
 
 #mobile-nav-toggle i {
-    color: #fff;
+    &.fa {
+        &.fa-bars {
+            color: $blue_dark;
+            font-size: 30px;
+        }
+    }
+
+    &.fa {
+        &.fa-times {
+            color: #fff;
+            font-size: 30px;
+        }
+    }
 }
 
 /* Mobile Nav Styling */
@@ -212,7 +228,7 @@
 }
 
 #mobile-nav ul li a:hover {
-    color: #070b52;
+    color: #fff;
 }
 
 #mobile-nav ul li li {
@@ -220,7 +236,7 @@
 }
 
 #mobile-nav ul li.menu-active a {
-    color: #070b52;
+    color: #fff;
 }
 
 #mobile-nav ul .menu-has-children i {
