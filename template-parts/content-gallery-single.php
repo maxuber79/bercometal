@@ -2,9 +2,9 @@
 <article <?php post_class( 'row' );?>> 
 <div class="col-12 mt-3">
 
-    <h3>Ficha técnica:</h3>
-    <hr class="my-1">    
-    <p><?php the_field( 'description' ); ?></p>
+    <h4><strong>Proyecto:</strong> <?php the_field( 'description' ); ?></h4>
+    <!-- <hr class="my-1">     -->
+    <!-- <p><?php //the_field( 'description' ); ?></p> -->
 
 </div>
 <div class="col-12">

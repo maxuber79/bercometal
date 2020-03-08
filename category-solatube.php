@@ -7,7 +7,11 @@
  * @since bercometal 1.0
  */
 
-get_header( 'page' ); ?>
+ if (is_category( 'solatube' )) {
+    get_header( 'solatube' );
+} else {
+    get_header( 'page' );
+} ?>
 <main id="main">	
 	<section class="page-heading asset-bg">
 		<div class="container">

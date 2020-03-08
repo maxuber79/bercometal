@@ -40,13 +40,15 @@
 
                             <a href="<?php the_permalink(); ?>" class="link-details" title="Más detalles: <?php the_title(); ?>">
                               <i class="ion ion-android-open"></i>
-                            </a>                            
+                            </a>       
+
+                            <a href="#" class="name-proyect"><i><?php the_field('descripcion'); ?></i></a>                     
                     </figure>
-                    <div class="portfolio-info">
-                      <h4><a href="<?php the_permalink(); ?>" alt="<?php $cat = get_the_category(); echo $cat[0]->cat_name; ?> / <?php the_field('category-service'); ?>"><?php the_field('category-service'); ?></a></h4>
-                      <!-- <p><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></p> -->
-                      <p><?php the_field('descripcion'); ?></p>
-                    </div>
+                    <!-- <div class="portfolio-info">
+                      <h4><a href="<?php //the_permalink(); ?>" alt="<?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?> / <?php //the_field('category-service'); ?>"><?php //the_field('category-service'); ?></a></h4>
+                      <p><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></p>
+                      <p><?php //the_field('descripcion'); ?></p>
+                    </div> -->
                   </div><!--./portfolio-wrap-->
                 </div><!--./col-lg-4 col-md-6 portfolio-item filter-solatube wow fadeInUp -->
                 <?php endwhile; wp_reset_query(); ?> 

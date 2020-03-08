@@ -67,21 +67,7 @@
           ?>
     </div>
   </header><!-- #header -->
-
-  
-    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
-      <?php if(has_post_thumbnail() ): ?>
-      <section id="banner-page" class="bg-banner" style="background-image: url('<?php echo $thumb['0'];?>');">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                
-                </div>
-            </div>
-        </div>
-    </section>
-    <?php else : ?>
-    <section id="banner-page" class="bg-banner" style="background-image: url(https://picsum.photos/1280/480/?blur);">
+      <section id="banner-page" class="bg-banner" style="background-image: url(http://webmain.cl/desarrollo/wp-content/uploads/2020/01/banner-policarbonato.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -89,5 +75,3 @@
             </div>
         </div>
     </section>
-
-<?php endif; ?>
