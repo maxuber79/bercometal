@@ -1,0 +1,104 @@
+[
+    {
+        "key": "group_5dd1ccb3c5b9c",
+        "title": "Galería",
+        "fields": [
+            {
+                "key": "field_5dd1ccf7066fa",
+                "label": "Filtro de galería",
+                "name": "filter_gallery",
+                "type": "select",
+                "instructions": "Debes seleccionar el filtro del servicio publicado",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Seleccionar filtro": "Seleccionar filtro",
+                    "filter-empresa": "filter-empresa",
+                    "filter-particulares": "filter-particulares",
+                    "filter-solatube": "filter-solatube"
+                },
+                "default_value": [
+                    "selecciona el filtro"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "label",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5dd1d46416e4c",
+                "label": "Categoria Servicios",
+                "name": "category-service",
+                "type": "select",
+                "instructions": "Debes seleccionar el nombre de la categoría del servicio",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Seleccionar categoría": "Seleccionar categoría",
+                    "Empresa": "Empresa",
+                    "Particulares": "Particulares",
+                    "Solatube": "Solatube"
+                },
+                "default_value": [
+                    "Selecciona categoría"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "label",
+                "ajax": 0,
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:galeria"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:empresa"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:particulares"
+                }
+            ],
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "category:solatube"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

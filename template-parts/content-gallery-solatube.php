@@ -21,40 +21,40 @@
             );            
             $the_query = new WP_query($args); ?>
 
+      <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+          <ul class="list-unstyled" style="margin: 15px 0 0 0;">
     
         <?php if ( $the_query->have_posts() ) : ?>
         <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
 
 
-      <div class="col-lg-4 col-md-6 gallery-item <?php the_field('filter_gallery'); ?> wow fadeInUp" data-wow-delay="0.1s">
-        <div class="gallery-wrap">
-          <figure>
-                  <?php $thumb_id = get_post_thumbnail_id();
-                  $thumb_url = wp_get_attachment_image_src( $thumb_id, 'thumb-gallery'); ?>
-                  <?php if(has_post_thumbnail() ): ?>
-                      <img class="img-fluid thumbnail-gallery" id="thumbnail-gallery" src="<?php echo $thumb_url['0'];?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
-                  <?php else : ?>
-                      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/default-gallery.jpg" alt="" title="<?php the_title_attribute(); ?>">
-                  <?php endif; ?> 
 
-                  <a href="<?php echo $thumb_url['0'];?>" class="link-preview" data-lightbox="gallery" data-title="<?php the_excerpt(); ?>" title="<?php the_title_attribute(); ?>">
-                    <i class="ion ion-eye"></i>
+            <li class="media border-bottom p-2 mb-1">
+            <?php $thumb_id = get_post_thumbnail_id();
+                  $thumb_url = wp_get_attachment_image_src( $thumb_id, 'thumb-sidebar'); ?>
+                    <?php if(has_post_thumbnail() ): ?>
+              <img id="thumbnail-gallery" src="<?php echo $thumb_url['0'];?>" class="mr-3 thumbnail-gallery" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
+              <?php else : ?>
+                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/default-gallery.jpg" alt="" title="<?php the_title_attribute(); ?>">
+              <?php endif; ?>
+              <div class="media-body">
+                <h5 class="mt-0 mb-1"><?php the_field('category-service'); ?></h5>
+                <?php the_field('descripcion'); ?><br>
+                <a href="<?php the_permalink(); ?>" class="text-info stretched-link float-right" title="Más detalles: <?php the_title(); ?>">
+                    Leer más
                   </a>
-
-                  <a href="<?php the_permalink(); ?>" class="link-details" title="Más detalles: <?php the_title(); ?>">
-                    <i class="ion ion-android-open"></i>
-                  </a>                            
-          </figure>
-          <div class="gallery-info">
-            <!-- <h4><a href="<?php //the_permalink(); ?>"><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></a></h4> -->
-            <h4><a href="<?php the_permalink(); ?>" alt="<?php $cat = get_the_category(); echo $cat[0]->cat_name; ?> / <?php the_field('category-service'); ?>"><?php the_field('category-service'); ?></a></h4>
-            <!-- <p><?php //$cat = get_the_category(); echo $cat[0]->cat_name; ?></p> -->
-            <!-- <p><?php //the_field('category-service'); ?></p> -->
-            <p><?php the_field('descripcion'); ?></p>
-          </div>
-        </div><!--./gallery-wrap-->
-      </div><!--./col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp -->
+              </div>
+            </li>
      <?php endwhile; ?>
+          </ul>
+
+
+       
+
+
+
+
+      </div><!--./col-lg-4 col-md-6 gallery-item filter-solatube wow fadeInUp -->
       
        
       
