@@ -33,17 +33,17 @@
 
       <!-- <div id="logo" class="pull-left"> -->
         <div id="logo">
-        <h1>
-           <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
-              <?php the_custom_logo(); ?>
-          <?php else : ?> 
-              <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="200" height="auto" /></a></h1>
-          <?php endif; ?>
-                  
-        </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
-      </div>
+            <h1>
+            <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
+                <?php the_custom_logo(); ?>
+            <?php else : ?> 
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="200" height="auto" /></a></h1>
+            <?php endif; ?>
+                    
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
       <?php $defaults = array(
           'theme_location' => 'menu_interior',
           'menu'              => '', // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
@@ -63,8 +63,8 @@
           'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>', // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
           'item_spacing'      => '', // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
               );
-        wp_nav_menu( $defaults );
-          ?>
+            wp_nav_menu( $defaults );
+        ?>
     </div>
   </header><!-- #header -->
       <section id="banner-page" class="bg-banner" style="background-image: url(http://webmain.cl/desarrollo/wp-content/uploads/2020/01/banner-solatube.jpg);">
