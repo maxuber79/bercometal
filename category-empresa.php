@@ -19,7 +19,7 @@
 			<div class="row">
 				<div class="col-6">
 						<div class="heading-text">
-							<h1 class="entry-title"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
+							<h1 class="entry-title"><?php echo get_cat_name( $category_id = 9 );?></h1>
 						</div>
 					</div>
 					<div class="col-6 text-right">
@@ -34,7 +34,6 @@
        <div class="container">
            <div class="row">
                <div class="col-lg-8 post-area">
-				<h2>category-empresa.php</h2>
 			   	<article id="gallery" class="post-<?php the_ID(); ?>">
 					<?php get_template_part('template-parts/content', 'gallery-empresa'); ?>
 				</article>

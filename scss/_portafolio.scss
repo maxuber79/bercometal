@@ -146,7 +146,9 @@
 
 #portfolio .portfolio-item figure:hover .name-proyect {
     opacity: 1;
-    left: calc(0 - 44px);
+    top: 62%;
+    left: 23%;
+    width: 54%;
 }
 
 
@@ -202,5 +204,16 @@
         background-color: #1e9239;
         color: #fff;
         @include transicion;
+    }
+}
+.card {
+    .card-body {
+        .btn {
+            &.btn-secondary {
+                &:visited {
+                    color: #fff;
+                }
+            }
+        }
     }
 }

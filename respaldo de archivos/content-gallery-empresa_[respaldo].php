@@ -3,8 +3,8 @@
     $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
             $args = array (
               //'cat' => '7,9,8,10',
-              'cat' => 7,
-              'posts_per_page' => 10,
+              'cat' => 9,
+              'posts_per_page' => 6,
               'paged' => $paged,
               'orderby' => 'title',
               'order'   => 'DESC',
