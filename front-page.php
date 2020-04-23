@@ -90,23 +90,23 @@ Intro Section
         <article class="row">
             <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-economic-architecture-building-of-stacked-containers"></i></div>
-            <h4 class="title"><a href="<?php echo esc_url( get_page_link( 514 ) ); ?>">Estructuras Metálicas y Maderas</a></h4>
+            <h4 class="title"><a href="<?php echo esc_url( get_page_link( 516 ) ); ?>">Estructuras Metálicas y Maderas</a></h4>
             <p class="description">Proyectos para Empresas (Industriales-Comerciales-Constructoras) con productos de construcción de excelente calidad y garantizados, </p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-ceiling-lamp"></i></div>
-            <h4 class="title"><a href="<?php echo esc_url( get_page_link( 516 ) ); ?>">Sistema de Solatube</a></h4>
+            <h4 class="title"><a href="<?php echo esc_url( get_page_link( 441 ) ); ?>">Sistema de Solatube</a></h4>
             <p class="description">Sistema de iluminación natural eficiente, con tecnología de vanguardia que brinda luz natural y ecológica para iluminar pequeños y grandes espacios.</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-sketch"></i></div>
             <h4 class="title"><a href="<?php echo esc_url( get_page_link( 519 ) ); ?>">Obras Civiles Menores</a></h4>
-            <p class="description">Ampliaciones, Reparaciones, Manutenciones, Habilitaciones de oficinas, Tiendas Comerciales, Cobertizos Estacionamientos, Patios de Servicios, Protecciones Metálicas, Rejas, Portones (correderas ó batientes).</p>
+            <p class="description">Ampliaciones, Reparaciones, Manutenciones, Habilitaciones de oficinas, Tiendas Comerciales, Cobertizos Estacionamientos, Patios de Servicios, Protecciones Metálicas, Rejas, Portones (correderas ó batientes), Terrazas, Lucarnas y Cupulas así como también, en viviendas particulares (Casas y Departamentos).</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-glass-wall"></i></div>
-            <h4 class="title"><a href="<?php echo esc_url( get_page_link( 522 ) ); ?>">Provisión e Instalación de Policarbonatos</a></h4>
-            <p class="description">Instalación de Alveolares, Monolíticos y Antobalísticos</p>
+            <h4 class="title"><a href="<?php echo esc_url( get_page_link( 522 ) ); ?>">Provisión e Instalación de Policarbonatos / Covid 19</a></h4>
+            <p class="description">Instalación de Alveolares, Monolíticos, Antobalísticos, divisiones de protección en acrílico, túneles sanitizadores de personas </p>
           </div>
           <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
