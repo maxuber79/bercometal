@@ -8,11 +8,7 @@
             </ul>
           </div>
         </div>
-
         <div class="row portfolio-container">
-
-        
-
           <?php 
                 $args = array(
                     //'cat' => '6, 7, 8, 9',

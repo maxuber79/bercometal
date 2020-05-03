@@ -22,7 +22,7 @@
             <?php if(has_post_thumbnail() ): ?>
                 <img class="img-fluid thumbnail-gallery" id="thumbnail-gallery" src="<?php echo $thumb_url['0'];?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
           <?php else : ?>
-                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/default-gallery.jpg" alt="" title="<?php the_title_attribute(); ?>">
+                  <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/default-gallery.jpg" alt="" title="<?php the_title_attribute(); ?>">
           <?php endif; ?> 
           <div class="card-body">
             <h5 class="card-title"><?php the_field('descripcion'); ?></h5>

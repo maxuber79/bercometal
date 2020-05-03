@@ -33,20 +33,20 @@ Intro Section
 
           <div class="col-lg-4 box">
             <i class="ion-ribbon-b"></i>
-            <h4 class="title"><a href="">Certificación</a></h4>
-            <p class="description">Contamos con la certificación de SABIC Polymershapes Chile, para proveer e instalar productos de Solatube y Policarbonatos.</p>
+            <h4 class="title">Certificación</h4>
+            <p class="description">Contamos con la certificación de Polymerland Company, para proveer e instalar productos de Solatube y Policarbonatos según las necesidades específicas, ya sea para uso en industrias, empresas y viviendas.</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
             <i class="ion-checkmark-circled"></i>
-            <h4 class="title"><a href="">Responsabilidad</a></h4>
+            <h4 class="title">Responsabilidad</h4>
             <p class="description">Mediante el desarrollo de proyectos eficientes, en los plazos definidos y con altos estándares de calidad y seguridad.</p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="fa fa-handshake-o"></i>
-            <h4 class="title"><a href="">Confianza</a></h4>
-            <p class="description">Mantenemos un estrecho lazo de confianza con nuestros clientes, quienes nos permiten potenciar al máximo nuestras capacidades.</p>
+            <h4 class="title">Confianza</h4>
+            <p class="description">Mantenemos  día a día un estrecho lazo de confianza con nuestros clientes, quienes nos permiten potenciar al máximo nuestras capacidades.</p>
           </div>
 
         </div>
@@ -56,7 +56,7 @@ Intro Section
         About Us Section
     ============================-->
     
-    <section id="about" style="background-image: url('<?php echo get_post_meta($post->ID, 'URL_bg_about', true); ?>');background-size:cover;background-position: center center;background-repeat: no-repeat;">
+    <!-- <section id="about" style="background-image: url('<?php //echo get_post_meta($post->ID, 'URL_bg_about', true); ?>');background-size:cover;background-position: center center;background-repeat: no-repeat;">
         <div class="container">
 
             <div class="row">
@@ -68,8 +68,8 @@ Intro Section
                 </div>
             </div>            
 
-        </div><!--./container-->
-    </section><!-- #about -->
+        </div> 
+    </section> -->
 
      <!--==========================
         Services Section
@@ -81,29 +81,29 @@ Intro Section
             <div class="col-12">
                 <header class="section-header wow fadeInUp">
                     <h3>Servicio</h3>
-                    <p>Nuestro servicio de construcción y expertise se basa en el desarrollo de proyectos que contemplan:</p>
+                    <p>Entregamos un servicio integral en soluciones constructivas para ofinas, industria y viviendas.</p>
                 </header>
             </div>
         </div>          
 
         
         <article class="row">
-            <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div id="border-2" class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-economic-architecture-building-of-stacked-containers"></i></div>
             <h4 class="title"><a href="<?php echo esc_url( get_page_link( 516 ) ); ?>">Estructuras Metálicas y Maderas</a></h4>
             <p class="description">Proyectos para Empresas (Industriales-Comerciales-Constructoras) con productos de construcción de excelente calidad y garantizados, </p>
           </div>
-          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <div id="border-2" class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-ceiling-lamp"></i></div>
             <h4 class="title"><a href="<?php echo esc_url( get_page_link( 441 ) ); ?>">Sistema de Solatube</a></h4>
             <p class="description">Sistema de iluminación natural eficiente, con tecnología de vanguardia que brinda luz natural y ecológica para iluminar pequeños y grandes espacios.</p>
           </div>
-          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <div id="border-2" class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-sketch"></i></div>
             <h4 class="title"><a href="<?php echo esc_url( get_page_link( 519 ) ); ?>">Obras Civiles Menores</a></h4>
             <p class="description">Ampliaciones, Reparaciones, Manutenciones, Habilitaciones de oficinas, Tiendas Comerciales, Cobertizos Estacionamientos, Patios de Servicios, Protecciones Metálicas, Rejas, Portones (correderas ó batientes), Terrazas, Lucarnas y Cupulas así como también, en viviendas particulares (Casas y Departamentos).</p>
           </div>
-          <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div id="border-2" class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="icon-glass-wall"></i></div>
             <h4 class="title"><a href="<?php echo esc_url( get_page_link( 522 ) ); ?>">Provisión e Instalación de Policarbonatos / Covid 19</a></h4>
             <p class="description">Instalación de Alveolares, Monolíticos, Antobalísticos, divisiones de protección en acrílico, túneles sanitizadores de personas </p>
@@ -152,9 +152,11 @@ Intro Section
 
             <div class="col-md-4">
             <div class="contact-address">
-                <i class="ion-ios-location-outline"></i>
-                <h3>Dirección</h3>
-                <address>Lorem Ipsu dolor N° 12345, Of. 123, Santiago, Chile</address>
+                <!-- <i class="ion-ios-location-outline"></i> -->
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>Teléfono</h3>
+                <!-- <address>Lorem Ipsu dolor N° 12345, Of. 123, Santiago, Chile</address> -->
+                <p><a href="tel:+56984098075">+569 8409 8075</a></p>
             </div>
             </div>
 
@@ -162,7 +164,7 @@ Intro Section
             <div class="contact-phone">
                 <i class="ion-ios-telephone-outline"></i>
                 <h3>Teléfonos</h3>
-                <p><a href="tel:+155895548855">+56 2 1234 5678 - 5678</a></p>
+                <p><a href="tel:+56997733024">+569 9773 3024</a></p>
             </div>
             </div>
 
@@ -170,7 +172,7 @@ Intro Section
             <div class="contact-email">
                 <i class="ion-ios-email-outline"></i>
                 <h3>Email</h3>
-                <p><a href="contacto@costaaustral.cl">contacto@bercometal.com</a></p>
+                <p><a href="contacto@bercometal.com">contacto@bercometal.com</a></p>
             </div>
             </div>
 

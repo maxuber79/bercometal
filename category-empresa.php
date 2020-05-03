@@ -34,6 +34,7 @@
        <div class="container">
            <div class="row">
                <div class="col-lg-8 post-area">
+			   <h1>category-empresa.php</h1>
 			   	<article id="gallery" class="post-<?php the_ID(); ?>">
 					<?php get_template_part('template-parts/content', 'gallery-empresa'); ?>
 				</article>

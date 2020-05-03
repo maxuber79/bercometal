@@ -19,7 +19,7 @@ if (is_category( 'galeria' )) {
 			<div class="row">
 				<div class="col-6">
 						<div class="heading-text">
-							<h1 class="entry-title"><?php echo get_cat_name( $category_id = 6 );?></h1>
+							<h1 class="entry-title">Todos los proyectos<?php// echo get_cat_name( $category_id = 6 );?></h1>
 						</div>
 					</div>
 					<div class="col-6 text-right">
@@ -33,13 +33,14 @@ if (is_category( 'galeria' )) {
   	<section id="page-content" class="page-content-area">
        <div class="container">
            <div class="row">
-               <div class="col-lg-8 post-area">
+               <div class="col-12 post-area">
+			   <h1>category-gallery.php</h1>
 			   	<article id="gallery" class="post-<?php the_ID(); ?>">
 					<?php get_template_part('template-parts/content', 'gallery-page'); ?>
 				</article>			
 					
 				</div>	
-				<?php get_sidebar( 'page' ); ?>
+				<?php //get_sidebar( 'page' ); ?>
 			</div>
 		</div>
 	</section>

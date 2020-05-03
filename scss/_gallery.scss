@@ -149,3 +149,51 @@
     padding: 0;
     margin: 0;
 }
+
+#gallery {
+    .gallery-category {
+        .gallery-item {
+            .card-group {
+                .card {
+                    min-height: 320px;
+                    margin: 15px 0;
+                    .thumb-category {
+                        width: 100%;
+                        height: 160px;
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    .card-body {
+                        padding: 1rem;
+                        .card-title {
+                            @include roboto(1rem,600,$blue-dark);
+                            line-height: normal;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .card-text {
+                            @include roboto(1rem,400,#444);
+                            line-height: normal;
+                            padding: 0;
+                            margin: 10px 0 0 0;
+                        }
+                        .wrapp-btn {
+                            position: absolute;
+                            bottom: 3%;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            .btn {
+                                &.btn-category {
+                                    background-color: #070b52;
+                                    display: inline-block;
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
